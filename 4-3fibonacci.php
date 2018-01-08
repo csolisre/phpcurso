@@ -3,12 +3,19 @@
 class GetalArrayGenerator {
 
     public function getArray() {
-        $tab = array();
-        $som=0;
-        for ($i = 0; $i < 50; $i++) {
+        $tab=array();
+        $oud=0;
+        $new=1;
+        $i=0;
+        $tab[$i]=$oud;
+        
+        while ($new <= 30) {
+            $i++;
+            $tab[$i]=$new;
+            $vorigoud=$oud;
+            $oud=$new;
+            $new=$vorigoud+$oud;
             
-            $tab[$i] = $i+$som;
-            $som=$som+$i; 
         }
         return $tab;
     }
