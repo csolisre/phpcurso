@@ -7,15 +7,17 @@ class Getallen{
     public function getGetallen(){
         $tab= array();
         $rand = rand(1, 100);
-        while ($rand <80){
-            array_push($tab, $rand);
-            $rand= rand(1, 80);
-        }
         array_push($tab, $rand);
+        while ($rand <80){
+            
+            $rand= rand(1, 100);
+            array_push($tab, $rand);
+        }
+        
         return $tab;
     }
 }
-
+  
 
 ?>
 <!DOCTYPE HTML>
