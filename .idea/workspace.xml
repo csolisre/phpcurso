@@ -2,8 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9303399-ed2d-4d1d-91bd-eea0690d1983" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/deel9/modules.php" afterPath="$PROJECT_DIR$/deel9/modules.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/a8237398-b959-4718-98e8-d82f92c5952e.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/css/bootstrap-grid.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/css/bootstrap-grid.css.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/css/bootstrap-grid.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/css/bootstrap-grid.min.css.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/css/bootstrap-reboot.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/css/bootstrap-reboot.css.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/css/bootstrap-reboot.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/css/bootstrap-reboot.min.css.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/css/bootstrap.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/css/bootstrap.css.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/css/bootstrap.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/css/bootstrap.min.css.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/deel9/moduleangepast/filmangepast/filmedit.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/deel9/moduleangepast/filmangepast/filmsvista.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/js/bootstrap.bundle.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/js/bootstrap.bundle.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/js/bootstrap.bundle.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/js/bootstrap.bundle.min.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/js/bootstrap.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/js/bootstrap.js.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/js/bootstrap.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/js/bootstrap.min.js.map" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/deel9/moduleangepast/filmangepast/filmList2.php" afterPath="$PROJECT_DIR$/deel9/moduleangepast/filmangepast/filmList2.php" />
+      <change beforePath="$PROJECT_DIR$/deel9/moduleangepast/filmangepast/films2.php" afterPath="$PROJECT_DIR$/deel9/moduleangepast/filmangepast/films2.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,40 +41,98 @@
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
     <option name="GROUP_SCHEMA" value="true" />
     <option name="GROUP_CONTENTS" value="false" />
     <option name="SORT_POSITIONED" value="false" />
     <option name="SHOW_TABLE_DETAILS" value="true" />
     <option name="SHOW_EMPTY_GROUPS" value="false" />
     <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="cursusphp@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="cursusphp@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="cursusphp@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="cursusphp: schema" type="c314c289:MysqlImplModel$Schema" />
+      </path>
+    </expand>
     <select />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="phpcurso" />
+  </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="modules.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/deel9/modules.php">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="films2.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/deel9/moduleangepast/filmangepast/films2.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="60" lean-forward="false" selection-start-line="12" selection-start-column="60" selection-end-line="12" selection-end-column="60" />
-              <folding>
-                <marker date="1516089723898" expanded="true" signature="382:426" ph="select naam,... modules" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6e5b863a-52cd-4ded-b70b-206a0f4af056/console.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="195">
+              <caret line="13" column="5" lean-forward="false" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="filmList2.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/deel9/moduleangepast/filmangepast/filmList2.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="22" lean-forward="false" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+              <folding>
+                <marker date="1516130134000" expanded="true" signature="398:409" ph="select id, n... modules" />
+                <marker date="1516130134000" expanded="true" signature="398:416" ph="select id, t... modules" />
+                <marker date="1516130134000" expanded="true" signature="398:450" ph="select id, t... films" />
+                <marker date="1516130134000" expanded="true" signature="869:917" ph="select titel... films" />
+                <marker date="1516130134000" expanded="true" signature="1277:1345" ph="update films... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="filmedit.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/deel9/moduleangepast/filmangepast/filmedit.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" column="5" lean-forward="false" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="filmsvista.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/deel9/moduleangepast/filmangepast/filmsvista.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="10" column="62" lean-forward="true" selection-start-line="10" selection-start-column="62" selection-end-line="10" selection-end-column="62" />
+              <folding>
+                <marker date="1516132071000" expanded="true" signature="637:755" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>title</find>
+      <find>modu</find>
+      <find>prijs</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>titel</replace>
+      <replace>film</replace>
+      <replace>duurtijd</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -56,6 +141,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/deel9/modules.php" />
+        <option value="$PROJECT_DIR$/deel9/moduleangepast/filmangepast/filmList2.php" />
+        <option value="$PROJECT_DIR$/deel9/moduleangepast/filmangepast/films2.php" />
+        <option value="$PROJECT_DIR$/deel9/moduleangepast/filmangepast/filmedit.php" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/a8237398-b959-4718-98e8-d82f92c5952e/console.sql" />
+        <option value="$PROJECT_DIR$/deel9/moduleangepast/filmangepast/filmsvista.php" />
       </list>
     </option>
   </component>
@@ -66,11 +156,11 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1473" />
-    <option name="y" value="179" />
-    <option name="width" value="1260" />
-    <option name="height" value="944" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1" />
+    <option name="y" value="23" />
+    <option name="width" value="1920" />
+    <option name="height" value="977" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -87,29 +177,26 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="PHPrepaso" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PHPrepaso" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="PHPrepaso" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PHPrepaso" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="deel9" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="phpcurso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="phpcurso" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="settings.editor.selected.configurable" value="SQL Dialects" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="HTML" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -126,6 +213,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="f9303399-ed2d-4d1d-91bd-eea0690d1983" name="Default" comment="" />
@@ -134,31 +224,34 @@
       <option name="presentableId" value="Default" />
       <updated>1516089486076</updated>
       <workItem from="1516089487644" duration="236000" />
+      <workItem from="1516124727642" duration="6792000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="236000" />
+    <option name="totallyTimeSpent" value="7028000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1272" y="-8" width="1936" height="1176" extended-state="6" />
+    <frame x="1" y="23" width="1920" height="977" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16577825" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32945284" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25239617" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1656017" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32945284" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3993015" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960597" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -173,7 +266,125 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6e5b863a-52cd-4ded-b70b-206a0f4af056/console.sql">
+    <entry file="file://$PROJECT_DIR$/deel9/modules.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1516124721000" expanded="true" signature="382:426" ph="select naam,... modules" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/6e5b863a-52cd-4ded-b70b-206a0f4af056/console.sql" />
+    <entry file="das://table:/29819111/6e5b863a-52cd-4ded-b70b-206a0f4af056/cursusphp.films">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/29819111/6e5b863a-52cd-4ded-b70b-206a0f4af056/cursusphp.modules">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deel9/modules.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="60" lean-forward="false" selection-start-line="12" selection-start-column="60" selection-end-line="12" selection-end-column="60" />
+          <folding>
+            <marker date="1516124721000" expanded="true" signature="382:426" ph="select naam,... modules" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deel9/moduleangepast/filmangepast/dbGegevensBewerken.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="7" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="39" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deel9/moduleangepast/filmangepast/filmList.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1516124721000" expanded="true" signature="402:454" ph="select id, t... films" />
+            <marker date="1516124721000" expanded="true" signature="869:917" ph="select titel... films" />
+            <marker date="1516124721000" expanded="true" signature="1297:1365" ph="update films... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deel9/moduleangepast/filmangepast/overzicht.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding>
+            <marker date="1516124721000" expanded="true" signature="483:600" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://src:table:/29819111/a8237398-b959-4718-98e8-d82f92c5952e/cursusphp.films">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/a8237398-b959-4718-98e8-d82f92c5952e/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="12" lean-forward="false" selection-start-line="0" selection-start-column="12" selection-end-line="0" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deel9/moduleangepast/filmangepast/filmedit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="5" lean-forward="false" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/29819111/a8237398-b959-4718-98e8-d82f92c5952e/cursusphp.films">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deel9/moduleangepast/filmangepast/films2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="5" lean-forward="false" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deel9/moduleangepast/filmangepast/filmList2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="22" lean-forward="false" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+          <folding>
+            <marker date="1516130134000" expanded="true" signature="398:409" ph="select id, n... modules" />
+            <marker date="1516130134000" expanded="true" signature="398:416" ph="select id, t... modules" />
+            <marker date="1516130134000" expanded="true" signature="398:450" ph="select id, t... films" />
+            <marker date="1516130134000" expanded="true" signature="869:917" ph="select titel... films" />
+            <marker date="1516130134000" expanded="true" signature="1277:1345" ph="update films... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/bootstrap-4.0.0-beta.3/_layouts/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -181,12 +392,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/deel9/modules.php">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="60" lean-forward="false" selection-start-line="12" selection-start-column="60" selection-end-line="12" selection-end-column="60" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/bootstrap-4.0.0-beta.3/docs/4.0/examples/blog/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-408">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/bootstrap-4.0.0-beta.3/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="25" lean-forward="true" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deel9/moduleangepast/filmangepast/filmsvista.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="10" column="62" lean-forward="true" selection-start-line="10" selection-start-column="62" selection-end-line="10" selection-end-column="62" />
           <folding>
-            <marker date="1516089723898" expanded="true" signature="382:426" ph="select naam,... modules" />
+            <marker date="1516132071000" expanded="true" signature="637:755" ph="..." />
           </folding>
         </state>
       </provider>

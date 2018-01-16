@@ -1,44 +1,46 @@
 <?php
-require_once 'films2.php';
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-class FilmList{
-    private $dbconect;
-    private $dbuser;
-    private $dbpwd;
-    
+//ModuleLijst.php
+require_once("films2.php");
+class FilmLijst {
+    private $dbConn;
+    private $dbUsername;
+    private $dbPassword;
     public function __construct() {
-        $this->dbconect= "mysql:host=localhost;dbname=cursusphp";
-        $this->dbuser= "cursusgebruiker";
-        $this->dbpwd= "cursuspwd";
+        $this->dbConn = "mysql:host=localhost;dbname=cursusphp;charset=utf8";
+        $this->dbUsername = "cursusgebruiker";
+        $this->dbPassword = "cursuspwd";
     }
-    
-    public function getList() {
-        $dbh = new PDO($this->dbconect, $this->dbuser, $this->dbpwd);
-        $sql = "select id, titel, duurtijd from films order by titel ";
-        $resultSet= $dbh->query($sql);
-        $list = array();
+    public function getLijst() {
+        $sql = "select id, titel, duurtijd from films order by titel";
+        $dbh = new PDO($this->dbConn, $this->dbUsername, $this->dbPassword);
+        $resultSet = $dbh->query($sql);
+        $lijst = array();
         foreach ($resultSet as $rij) {
-            $film = new Film($rij["id"], $rij["titel"], $rij["duurtijd"]);
-            array_push($list, $film);
+            $module = new Film ($rij["id"], $rij["titel"], $rij["duurtijd"]);
+            array_push($lijst, $module);
         }
         $dbh = null;
-        return $list;
+        return $lijst;
     }
     public function getFilmById($id) {
-        $dbh = new PDO($this->dbconect, $this->dbuser, $this->dbpwd);
         $sql = "select titel, duurtijd from films where id = :id";
+        $dbh = new PDO($this->dbConn, $this->dbUsername, $this->dbPassword);
         $stmt = $dbh->prepare($sql);
         $stmt->execute(array(':id' => $id));
-        $rij= $stmt->fetch(PDO::FETCH_ASSOC);
-        $film= new Film($id, $rij["titel"], $rij["titel"]);
-        
+        $rij = $stmt->fetch(PDO::FETCH_ASSOC);
+        $film = new Film ($id, $rij["titel"], $rij["duurtijd"]);
+
+$dbh = null;
+return $film;
+}
+    public function updateFilm($film) {
+        $sql = "update films set titel = :titel, duurtijd = :duurtijd where id = :id";
+        $dbh = new PDO($this->dbConn, $this->dbUsername, $this->dbPassword);
+        $stmt = $dbh->prepare($sql);
+        $resultSet = $stmt->execute(array(
+            ':titel' => $film->getTitel(),
+            ':duurtijd' => $film->getDuurtijd(),
+            ':id' => $film->getId()));
         $dbh = null;
-        return $film;
     }
 }
-
