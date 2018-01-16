@@ -7,11 +7,11 @@
  */
 class ModuleLijst{
     public function getLijst() {
-//        $dbh = new PDO("mysql:host=localhost;dbname=cursusphp;charset=utf8", "cursusgebruiker", "cursuspwd");
-      $dbh = new PDO("mysql:host=localhost;dbname=cursusphp;charset=utf8", "cursusgebruiker", "cursuspwd");
+       $dbh = new PDO("mysql:host=localhost;dbname=cursusphp;charset=utf8", "cursusgebruiker", "cursuspwd");
+
 //        
-        $sql = "select naam, prijs from modules where prijs >= :minprijs and prijs <= :maxprijs order by prijs";
-//      $sql = "select naam, prijs from modules where prijs >= :minprijs and prijs <= :maxprijs order by prijs";
+        $sql = "select naam, prijs from modules WHERE  prijs";
+
     
         $stmt = $dbh->prepare($sql);
 //      $stmt = $dbh->prepare($sql);
