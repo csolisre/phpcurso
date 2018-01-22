@@ -42,15 +42,15 @@ if (isset($_GET["action"])) {
                                 <?php
                                 if ($spel->getStatus($rij, $kolom) == 0) {
                                     ?>
-                                <img src="/../PHPrepaso/img/emptyslot.png">
+                                <img src="/../phpcurso/img/emptyslot.png">
                                     <?php
                                 } elseif ($spel->getStatus($rij, $kolom) == 1) {
                                     ?>
-                                    <img src="/../PHPrepaso/img/yellowslot.png">
+                                    <img src="/../phpcurso/img/yellowslot.png">
                                     <?php
                                 } elseif ($spel->getStatus($rij, $kolom) == 2) {
                                     ?>
-                                    <img src="/../PHPrepaso/img/redslot.png">
+                                    <img src="/../phpcurso/img/redslot.png">
                                     <?php
                                 }
                                 ?>

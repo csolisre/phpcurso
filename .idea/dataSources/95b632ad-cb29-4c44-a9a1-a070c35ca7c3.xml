@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataSource name="cursusphp@localhost">
+<dataSource name="broodjesbar@localhost">
   <database-model serializer="dbm" rdbms="MYSQL" format-version="4.7">
     <root id="1">
       <DefaultCasing>mixed/mixed</DefaultCasing>
     </root>
     <schema id="2" parent="1" name="broodjesbar">
+      <Current>1</Current>
+      <Visible>1</Visible>
       <Collation>utf8_unicode_ci</Collation>
     </schema>
     <schema id="3" parent="1" name="cursusphp">
-      <Current>1</Current>
-      <Visible>1</Visible>
       <Collation>utf8_bin</Collation>
     </schema>
     <schema id="4" parent="1" name="information_schema">
@@ -897,157 +897,110 @@
       <Charset>utf8mb4</Charset>
       <DefaultForCharset>0</DefaultForCharset>
     </collation>
-    <table id="226" parent="3" name="films">
+    <table id="226" parent="2" name="bestellen">
       <Engine>InnoDB</Engine>
     </table>
-    <table id="227" parent="3" name="gastenboek">
+    <table id="227" parent="2" name="broodjes">
+      <Engine>InnoDB</Engine>
+      <Collation>latin1_swedish_ci</Collation>
+    </table>
+    <table id="228" parent="2" name="users">
       <Engine>InnoDB</Engine>
     </table>
-    <table id="228" parent="3" name="modules">
-      <Engine>InnoDB</Engine>
-    </table>
-    <table id="229" parent="3" name="personen">
-      <Engine>InnoDB</Engine>
-    </table>
-    <table id="230" parent="3" name="vieropeenrij_spelbord">
-      <Engine>InnoDB</Engine>
-    </table>
-    <column id="231" parent="226" name="id">
+    <column id="229" parent="226" name="id">
       <Position>1</Position>
-      <DataType>int(10) unsigned|0</DataType>
+      <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="232" parent="226" name="titel">
+    <column id="230" parent="226" name="user">
       <Position>2</Position>
-      <DataType>varchar(150)|0</DataType>
+      <DataType>varchar(40)|0</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="233" parent="226" name="duurtijd">
+    <column id="231" parent="226" name="brood">
       <Position>3</Position>
-      <DataType>int(10) unsigned|0</DataType>
+      <DataType>varchar(40)|0</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="234" parent="226" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <column id="235" parent="227" name="id">
-      <Position>1</Position>
-      <DataType>int(10) unsigned|0</DataType>
-      <NotNull>1</NotNull>
-      <SequenceIdentity>1</SequenceIdentity>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="236" parent="227" name="auteur">
-      <Position>2</Position>
-      <DataType>varchar(45)|0</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="237" parent="227" name="boodschap">
-      <Position>3</Position>
-      <DataType>varchar(250)|0</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="238" parent="227" name="datum">
+    <column id="232" parent="226" name="price">
       <Position>4</Position>
-      <DataType>datetime|0</DataType>
+      <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="239" parent="227" name="PRIMARY">
+    <key id="233" parent="226" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="240" parent="228" name="id">
+    <column id="234" parent="227" name="ID">
       <Position>1</Position>
-      <DataType>int(10) unsigned|0</DataType>
+      <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="241" parent="228" name="naam">
+    <column id="235" parent="227" name="Naam">
       <Position>2</Position>
       <DataType>varchar(50)|0</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="242" parent="228" name="prijs">
+    <column id="236" parent="227" name="Omschrijving">
       <Position>3</Position>
-      <DataType>float|0</DataType>
+      <DataType>varchar(500)|0</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="243" parent="228" name="PRIMARY">
+    <column id="237" parent="227" name="Prijs">
+      <Position>4</Position>
+      <DataType>decimal(10,2)|0</DataType>
+      <NotNull>1</NotNull>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="238" parent="227" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
+      <ColNames>ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="244" parent="229" name="id">
+    <column id="239" parent="228" name="id">
       <Position>1</Position>
-      <DataType>int(10) unsigned|0</DataType>
+      <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="245" parent="229" name="familienaam">
+    <column id="240" parent="228" name="naam">
       <Position>2</Position>
-      <DataType>varchar(50)|0</DataType>
+      <DataType>varchar(40)|0</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="246" parent="229" name="voornaam">
+    <column id="241" parent="228" name="email">
       <Position>3</Position>
-      <DataType>varchar(30)|0</DataType>
+      <DataType>varchar(70)|0</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="247" parent="229" name="geboortedatum">
+    <column id="242" parent="228" name="password">
       <Position>4</Position>
-      <DataType>date|0</DataType>
+      <DataType>varchar(10)|0</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="248" parent="229" name="geslacht">
+    <column id="243" parent="228" name="status">
       <Position>5</Position>
-      <DataType>char(1)|0</DataType>
+      <DataType>varchar(12)|0</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="249" parent="229" name="PRIMARY">
+    <key id="244" parent="228" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
-      <Primary>1</Primary>
-    </key>
-    <column id="250" parent="230" name="rijnummer">
-      <Position>1</Position>
-      <DataType>smallint(5) unsigned|0</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="251" parent="230" name="kolomnummer">
-      <Position>2</Position>
-      <DataType>smallint(5) unsigned|0</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <column id="252" parent="230" name="status">
-      <Position>3</Position>
-      <DataType>smallint(5) unsigned|0</DataType>
-      <NotNull>1</NotNull>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <key id="253" parent="230" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <ColNames>rijnummer
-kolomnummer</ColNames>
       <Primary>1</Primary>
     </key>
   </database-model>
