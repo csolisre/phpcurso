@@ -81,7 +81,6 @@ class User{
                 "email  : ".$rij["email"]. "<br>".
                 "Status  : ".$rij["status"].
                 '<a href="validar.php?action=edit&id="'.$rij["id"].'> Change status</a>';
-
             array_push($list, $user);
         }
         $dbh = null;

@@ -11,22 +11,22 @@ require_once 'bestellinlist.php';
 if (isset($_GET['action']) && $_GET['action'] == "add") {
 
     $val = new User();
-    $passwordValidated = $val->ValidatePassword($_POST["password"], $_POST["password1"]);
+    $passwordValidated =$val->ValidatePassword($_POST["password"], $_POST["password1"]);
     if ($passwordValidated) {
-        $exist = $val->userExist($_POST["email"]);
+        $exist=$val->userExist($_POST["email"]);
         if($exist == true){
-            header("location: /phpcurso/brodjes/index.php?msg=exist");
+            header("location: /phprepaso/brodjes/index.php?msg=exist");
         }else{
             $status='active';
             $val->createUser($_POST['naam'], $_POST['email'], $_POST['password'], $status);
             $_SESSION["user"]=$_POST['naam'];
 
-            setcookie("ingevuldeNaam", $_POST["naam"], time() + 120);
+            setcookie("email", $_POST["naam"], time() + 120);
 
-            header("location: /phpcurso/brodjes/overzicht.php");
+            header("location: /phprepaso/brodjes/overzicht.php");
         }
     } else {
-        header("location: /phpcurso/brodjes/index.php?msg=error");
+        header("location: /phprepaso/brodjes/index.php?msg=error");
     }
 }
 
@@ -37,20 +37,20 @@ if (isset($_GET['action']) && $_GET['action'] == "login") {
     if ($userValidated == true){
         $_SESSION["user"]= $userValidated;
 
-        header("location: /phpcurso/brodjes/overzicht.php");
+        header("location: /phprepaso/brodjes/overzicht.php");
     } else {
-        header("location: /phpcurso/brodjes/index.php?msg=logerror");
+        header("location: /phprepaso/brodjes/index.php?msg=logerror");
     }
 
 
 }
 if (isset($_GET["action"]) && $_GET["action"] == "logout") {
     session_destroy();
-    header("location: /phpcurso/brodjes/index.php");
+    header("location: /phprepaso/brodjes/index.php");
 }
 
 if (isset($_GET["order"]) && $_GET["order"] == "add"){
     $bestel= new Bestelling();
     $bestel->createBestelling($_SESSION["user"], $_GET["Naam"]);
-    header("location: /phpcurso/brodjes/overzicht.php?msg=thk");
+    header("location: /phprepaso/brodjes/overzicht.php?msg=thk");
 }

@@ -6,11 +6,13 @@ session_start();
 if (isset($_GET["msg"]) && $_GET["msg"] == "error") {
     $msg = '<div class="alert alert-warning" role="alert">' . 'Las contraseñas no coinciden' . '</div>';
 }
-if (isset($_GET["msg"]) && $_GET["msg"] == "exist") {
+elseif (isset($_GET["msg"]) && $_GET["msg"] == "exist") {
     $msg = '<div class="alert alert-warning" role="alert">' . 'Este Usuario ya existe' . '</div>';
 }
-if (isset($_GET["msg"]) && $_GET["msg"] == "logerror") {
+elseif (isset($_GET["msg"]) && $_GET["msg"] == "logerror") {
     $msg = '<div class="alert alert-warning" role="alert">' . 'user or password error' . '</div>';
+}else{
+    $msg="";
 }
 ?>
 <!DOCTYPE html>
@@ -23,8 +25,8 @@ and open the template in the editor.
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <link href="/phpcurso/css/bootstrap.css" rel="stylesheet">
-    <script src="/phpcurso/js/bootstrap.min.js"></script>
+    <link href="/phprepaso/css/bootstrap.css" rel="stylesheet">
+    <script src="/phprepaso/js/bootstrap.min.js"></script>
 </head>
 <body>
 

@@ -10,11 +10,22 @@ require_once "users.php";
 
 $tab = new User();
 if (isset($_SESSION["user"])) {
-    $usr = $_SESSION["user"];
-    $usrId = $_SESSION["id"];
+   $usr = $_SESSION["user"];
 }
 ?>
-<!--Home menu-->
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link href="/phprepaso/css/bootstrap.css" rel="stylesheet">
+    <script src="/phprepaso/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <!--Home menu-->
 <nav class="navbar navbar-expand-md navbar-light bg-faded">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -48,17 +59,6 @@ if (isset($_SESSION["user"])) {
     </div>
 </nav>
 <!--End home menu-->
-
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <link href="/phpcurso/css/bootstrap.css" rel="stylesheet">
-    <script src="/phpcurso/js/bootstrap.min.js"></script>
-</head>
-<body>
 <div class="container">
     <?php if (isset($_SESSION["user"])) { ?>
         <div class="row">
@@ -90,4 +90,4 @@ if (isset($_SESSION["user"])) {
     ?>
 </div>
 </body>
-</html
+</html>

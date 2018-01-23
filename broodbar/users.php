@@ -31,4 +31,5 @@ class User{
     public function getUserStatus(){
         return $this->status;
     }
+    
 }
