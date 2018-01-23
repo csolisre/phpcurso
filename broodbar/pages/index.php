@@ -6,34 +6,74 @@
  */
 ?>
 <html>
-    <head>
-        <?php include("../components/header.php"); ?>
-    </head>
-    <body>
-        <!--Home menu-->
-        <?php include("../components/menu.php"); ?>
-        <!--End home menu-->
-        <div class="container">
-
-            <div class="row">
-                <h1>Welkom panaderia Leuven</h1>
-            </div>
-            
-            <div class="carousel-item">
-  <img src="..." alt="...">
-  <div class="carousel-caption d-none d-md-block">
-    <h5>...</h5>
-    <p>...</p>
-  </div>
+<head>
+    <?php include("../components/header.php"); ?>
+</head>
+<body>
+<!--Home menu-->
+<div class="container">
+    <?php include("../components/menu.php"); ?>
 </div>
-            <!--Tabs-->
-            <?php if (!isset($_SESSION["user"])) {
-                ?>
+<!--End home menu-->
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+        <!-- Slide One - Set the background image for this slide in the line below -->
+        <div class="carousel-item active" style="background-image: url('../../img/bread-923865_1920.jpg')">
+            <div class="carousel-caption d-none d-md-block">
+                <h3>.</h3>
+                <p>.</p>
+            </div>
+        </div>
+        <!-- Slide Two - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image: url('../../img/bread-2436370_1920.jpg')">
+            <div class="carousel-caption d-none d-md-block">
+                <h3>.</h3>
+                <p>T.</p>
+            </div>
+        </div>
+        <!-- Slide Three - Set the background image for this slide in the line below -->
+        <div class="carousel-item" style="background-image: url('../../img/pink-wine-1433496_1920.jpg')">
+            <div class="carousel-caption d-none d-md-block">
+                <h3>.</h3>
+                <p>.</p>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<!--Tabs-->
+<?php if (!isset($_SESSION["user"])) {
+?>
+<div class="container">
+    <div class="row <!--justify-content-md-center-->">
+        <div class="col-sm-4">
+            <div class="user-form">
+
+
+                <h1>Welkom panaderia Leuven</h1>
+
+
                 <nav>
                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab"
+                        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home"
+                           role="tab"
                            aria-controls="nav-home" aria-selected="true">Register</a>
-                        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab"
+                        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile"
+                           role="tab"
                            aria-controls="nav-profile" aria-selected="false">Login</a>
                     </div>
                 </nav>
@@ -51,7 +91,7 @@
                             <div class="form-group">
                                 Password <input type="password" name="password" required="required"><br>
                                 Repite password <input type="password" name="password1" required="required"><br>
-                                
+
                             </div>
                             <input name="usr" class="btn btn-primary" type="submit" value="Create account">
                         </form>
@@ -68,19 +108,23 @@
                             </div>
                             <div class="form-group">
                                 Password <input type="password" name="password" required="required"><br>
-                                
+
                             </div>
                             <input class="btn btn-primary" type="submit">
                         </form>
                     </div>
                     <!--End Logging form-->
                 </div>
-            <?php
-            } else {
-                Print "<h1>You are logged in as " . " , " . $_SESSION["user"] . "</h1>";
-            }
-            ?>
-            <!--end tabs-->
+
+                <?php
+                } else {
+                    Print "<h1>You are logged in as " . " , " . $_SESSION["user"] . "</h1>";
+                }
+                ?>
+                <!--end tabs-->
+            </div>
         </div>
-    </body>
+    </div>
+</div>
+</body>
 </html>
