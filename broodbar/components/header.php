@@ -10,5 +10,5 @@
 <script src="../../js/bootstrap.min.js"></script>
 <link href="../../css/bootstrap.css" rel="stylesheet">
 <link href="../../css/style.css" rel="stylesheet">
-
+<link href="../../css/animate.css" rel="stylesheet">
 

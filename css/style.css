@@ -89,7 +89,6 @@
 }
 .user-form {
 	position: fixed;
-	z-index: 99;
 	top: 100px;
 	padding: 20px;
 	background-color: rgba(255, 255, 255, 0.8);
@@ -104,4 +103,7 @@
 }
 .user-form .nav-tabs{
 	border-bottom: 1px solid #007bff;
+}
+.spacer-top{
+    margin-top: 70px;
 }

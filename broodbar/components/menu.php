@@ -6,12 +6,8 @@
  * and open the template in the editor.
  */
 ?>
-<script type="text/javascript">
-    $(window).load(function() {
-        $('#slider').nivoSlider();
-    });
-    </script>
-<nav class="navbar navbar-expand-md navbar-light bg-faded">
+
+<nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
@@ -25,7 +21,7 @@
                 <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link " href="overzicht.php">Menu</a>
+                <a class="nav-link " href="broodjesview.php">Menu</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link " href="bestellen.php">Orders</a>
@@ -34,6 +30,10 @@
                 <a class="nav-link active" href="userview.php">Users</a>
             </li>
         </ul>
-       
+       <?php
+            if (isset($_SESSION["user"])) {
+                print '<a href="../validate.php?action=logout">Log Out</a>';
+            }
+            ?> 
     </div>
 </nav>

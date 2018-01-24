@@ -25,9 +25,42 @@ class UserList {
         $dbh = null;
         return $list;
     }
-
+    public function validatePwd($pwd1, $pwd2) {
+        if ($pwd1 == $pwd2) {
+            return TRUE;
+        }else{
+            return FALSE;
+        }
+    }
     public function userExist($email) {
-        
+        $dbh=new Database();
+        $sql="select email from users where email = :email";
+        $dbh->query($sql);
+        $dbh->bind(':email', $email);
+        $dbh->execute();     
+        if ($dbh->rowCount() > 0){
+            return TRUE;
+        }else{
+            return FALSE;
+        }
+    }
+    public function userLogin($email, $pwd){
+        $dbh= new Database();
+        $sql="select id, naam, email, password, status from users where email= :email";
+        $dbh->query($sql);
+        $dbh->bind(':email', $email);
+        $dbh->execute();
+        $user= $dbh->single();
+        if ($user === FALSE){
+            return FALSE;
+        }else{
+            $validpass= password_verify($pwd, $user['password']);         
+            if ($validpass){
+                return TRUE;
+            }else{
+                return FALSE;
+            }              
+        }       
     }
 
     public function CreateUser($naam, $email, $password, $status) {

@@ -1,9 +1,24 @@
 <?php
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+//index.php
+session_start();
+
+
+if (isset($_GET["error"])){
+    switch ($_GET["error"]) {
+        case $_GET["error"]== 1:
+            $msg="The password are not the same try again";
+            break;
+        case $_GET["error"]== 2:
+            $msg="User already exist";
+            break;
+        case $_GET["error"]== 3:
+            $msg="User name or password error";
+            break;
+        default:
+            $msg="";
+            break;
+    }
+}
 ?>
 <html>
 <head>
@@ -27,7 +42,12 @@
         <div class="carousel-item active" style="background-image: url('../../img/bread-923865_1920.jpg')">
             <div class="carousel-caption d-none d-md-block">
                 <h3>.</h3>
-                <p>.</p>
+                <p><?php
+            if (isset($_SESSION["user"])) {
+                print $_SESSION["user"];
+            }
+            ?> 
+                 </p>
             </div>
         </div>
         <!-- Slide Two - Set the background image for this slide in the line below -->
@@ -61,7 +81,7 @@
 <div class="container">
     <div class="row <!--justify-content-md-center-->">
         <div class="col-sm-4">
-            <div class="user-form">
+            <div class="user-form animated fadeInDownBig">
 
 
                 <h1>Welkom panaderia Leuven</h1>
@@ -78,30 +98,36 @@
                     </div>
                 </nav>
                 <div class="tab-content" id="nav-tabContent">
-                    <!--Registration form-->
-                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                        <h3>Registrate para poder comprar</h3>
-                        <form action="../validate.php" method="post">
-                            <div class="form-group">
-                                Nombre <input type="text" name="naam" required="required"><br>
-                            </div>
-                            <div class="form-group">
-                                Correo <input type="email" name="email" required="required"><br>
-                            </div>
-                            <div class="form-group">
-                                Password <input type="password" name="password" required="required"><br>
-                                Repite password <input type="password" name="password1" required="required"><br>
-
-                            </div>
-                            <input name="usr" class="btn btn-primary" type="submit" value="Create account">
-                        </form>
-                    </div>
+                        <!--Registration form-->
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                            <h3>Registrate para poder comprar</h3>
+                            <form action="../validate.php" method="post">
+                                <div class="form-group">
+                                    Nombre <input type="text" name="naam" required="required"><br>
+                                </div>
+                                <div class="form-group">
+                                    Correo <input type="email" name="email" required="required"><br>
+                                </div>
+                                <div class="form-group">
+                                    Password <input type="password" name="password" required="required"><br>
+                                    Repite password <input type="password" name="password1" required="required"><br>
+                                </div>
+                                <input name="usr" class="btn btn-primary" type="submit" value="Create account">
+                               <?php if (isset($_GET["error"])){?>
+                                   <div class="alert alert-warning">
+                                    <strong>Warning!</strong> <?php print $msg; ?>
+                                </div> 
+                                <?php
+                               }
+                                ?>
+                            </form>
+                        </div>
 
                     <!--End Registration form-->
                     <!--Logging form-->
                     <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                         <h3>Ingresa a la pagina</h3>
-                        <form action="validar.php?action=login" method="post">
+                        <form action="../validate.php" method="post">
 
                             <div class="form-group">
                                 Correo <input type="email" name="email" required="required"><br>
@@ -110,15 +136,24 @@
                                 Password <input type="password" name="password" required="required"><br>
 
                             </div>
-                            <input class="btn btn-primary" type="submit">
+                            <input name="login" class="btn btn-primary" type="submit" value="login">
                         </form>
                     </div>
                     <!--End Logging form-->
                 </div>
 
                 <?php
-                } else {
-                    Print "<h1>You are logged in as " . " , " . $_SESSION["user"] . "</h1>";
+                } else {?>
+                    <div class="container">
+    <div class="row <!--justify-content-md-center-->">
+        <div class="col-sm-4">
+            <div class="user-form animated fadeInDownBig">
+                <h1>Welkom panaderia Leuven</h1>
+                <h4>You are logged as : <?php print $_SESSION["user"];?></h4>
+            </div>
+        </div>
+    </div>
+                <?php
                 }
                 ?>
                 <!--end tabs-->
