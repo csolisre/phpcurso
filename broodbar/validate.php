@@ -50,8 +50,6 @@ if (isset($_POST["login"])) {
         header('location: pages/broodjesview.php');
         
     }else{
-         header('location: pages/index.php?error=3');
-        echo 'no';
-        die();
+         header('location: pages/index.php?error=3');    
     }
 }
