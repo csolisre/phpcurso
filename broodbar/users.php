@@ -18,7 +18,6 @@ class User{
         $this->email=$email;
         $this->status=$status;
     }
-
     public function getUserId(){
         return $this->id;
     }
@@ -31,5 +30,4 @@ class User{
     public function getUserStatus(){
         return $this->status;
     }
-    
 }

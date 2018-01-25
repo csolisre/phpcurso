@@ -12,7 +12,9 @@ $tab = new BroodList();
     </head>
     <body>
         <!--Home menu-->
-        <?php include("../components/menu.php"); ?>
+        <div class="main-menu">
+            <?php include("../components/menu.php"); ?>
+        </div>
         <!--End home menu-->
         <div class="spacer-top"></div>
         <div class="container">

@@ -13,43 +13,49 @@ if (isset($_GET["action"]) && $_GET["action"]= 'logout'){
 require_once 'userlist.php';
 
 //User registration process
-
 if (isset($_POST["usr"]) && $_POST["usr"] == "Create account") {
-    $username= trim($_POST["naam"]);
-    $pass= trim($_POST["password"]);
-    $pass1= trim($_POST["password1"]);
-    $val= new UserList();
-    $valPass=$val->validatePwd($pass, $pass1);
-    if ($valPass) {
-        $exist=$val->userExist($_POST["email"]);
-        if ($exist) {
+    $create=new UserList();
+
+    //Validate passwords
+    $valid = $create->validatePwd(trim($_POST["password"]), trim($_POST["password1"]));
+    if ($valid){
+        //validate if user already exist
+        $userExist= $create->userExist($_POST["email"]);
+        if($userExist){
             header('location: pages/index.php?error=2');
         }else{
-            $passHash= password_hash($pass, PASSWORD_BCRYPT, array("cost" => 12));
-            $status='active';
-            $val->CreateUser($username, $_POST["email"], $passHash, $status);
-            header('location: pages/broodjesview.php');
-            $userId= new Database();
-            $usr=$userId->lastInsertId();
-            $_SESSION["user"]=$_POST["naam"];
-            $_SESSION["id"]=$usr;
-        }      
+            //create account
+            $status = 'active';
+            $user = $create->CreateUser(trim($_POST["naam"]), $_POST["email"], trim($_POST["password"]), $status);
+            $_SESSION["id"]=$user; //function createUser returns userID from the -lastInsertId
+            $_SESSION["user"]=trim($_POST["naam"]);
+            header('location: pages/index.php');
+        }
+
     }else{
         header('location: pages/index.php?error=1');
     }
-} 
+}
 
-//User Log in process
+//User Login process
 
-if (isset($_POST["login"])) {
-    $email= trim($_POST["email"]);
-    $pass= trim($_POST["password"]);
-    $validate= new UserList();
-    $test = $validate->userLogin($email, $pass);
-    if ($test){
-        header('location: pages/broodjesview.php');
-        
+if (isset($_POST["usr"]) && $_POST["usr"] = 'login'){
+    $userlog= new UserList();
+    //Verify if user exist
+    $userExist= $userlog->userExist($_POST["email"]);
+    if ($userExist){
+        //If exist get the information to verify password
+            $user=$userlog->getUserByEmail($_POST["email"]);
+            if(password_verify($_POST["password"], $user["password"])){
+                $_SESSION["id"]= $user["id"];
+                $_SESSION["user"]= $user["naam"];
+
+                header('location: pages/index.php');
+            }else{
+                header('location: pages/index.php?error=4');
+            }
     }else{
-         header('location: pages/index.php?error=3');    
+        header('location: pages/index.php?error=3');
     }
+
 }

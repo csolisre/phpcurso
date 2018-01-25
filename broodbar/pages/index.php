@@ -12,7 +12,10 @@ if (isset($_GET["error"])){
             $msg="User already exist";
             break;
         case $_GET["error"]== 3:
-            $msg="User name or password error";
+            $msg="User not recognized verify your email address";
+            break;
+        case $_GET["error"]== 4:
+            $msg="Password error please check your password";
             break;
         default:
             $msg="";
@@ -26,11 +29,11 @@ if (isset($_GET["error"])){
 </head>
 <body>
 <!--Home menu-->
-<div class="container">
+<div class="main-menu">
     <?php include("../components/menu.php"); ?>
 </div>
 <!--End home menu-->
-
+<!--Front slider-->
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -45,6 +48,7 @@ if (isset($_GET["error"])){
                 <p><?php
             if (isset($_SESSION["user"])) {
                 print $_SESSION["user"];
+
             }
             ?> 
                  </p>
@@ -74,7 +78,7 @@ if (isset($_GET["error"])){
         <span class="sr-only">Next</span>
     </a>
 </div>
-
+<!--End Front slider-->
 <!--Tabs-->
 <?php if (!isset($_SESSION["user"])) {
 ?>
@@ -136,7 +140,7 @@ if (isset($_GET["error"])){
                                 Password <input type="password" name="password" required="required"><br>
 
                             </div>
-                            <input name="login" class="btn btn-primary" type="submit" value="login">
+                            <input name="usr" class="btn btn-primary" type="submit" value="login">
                         </form>
                     </div>
                     <!--End Logging form-->
@@ -149,7 +153,7 @@ if (isset($_GET["error"])){
         <div class="col-sm-4">
             <div class="user-form animated fadeInDownBig">
                 <h1>Welkom panaderia Leuven</h1>
-                <h4>You are logged as : <?php print $_SESSION["user"];?></h4>
+                <h4>You are logged as : <?php print $_SESSION["user"] .$_SESSION["id"];?></h4>
             </div>
         </div>
     </div>

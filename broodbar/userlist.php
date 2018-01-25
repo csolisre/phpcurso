@@ -25,6 +25,7 @@ class UserList {
         $dbh = null;
         return $list;
     }
+//registration process
     public function validatePwd($pwd1, $pwd2) {
         if ($pwd1 == $pwd2) {
             return TRUE;
@@ -32,6 +33,7 @@ class UserList {
             return FALSE;
         }
     }
+
     public function userExist($email) {
         $dbh=new Database();
         $sql="select email from users where email = :email";
@@ -44,27 +46,22 @@ class UserList {
             return FALSE;
         }
     }
-    public function userLogin($email, $pwd){
+
+    public function getUserByEmail($email){
         $dbh= new Database();
-        $sql="select id, naam, email, password, status from users where email= :email";
+        $sql="select id, naam, email, password, status from users WHERE email = :email";
         $dbh->query($sql);
         $dbh->bind(':email', $email);
         $dbh->execute();
         $user= $dbh->single();
-        if ($user === FALSE){
-            return FALSE;
-        }else{
-            $validpass= password_verify($pwd, $user['password']);         
-            if ($validpass){
-                return TRUE;
-            }else{
-                return FALSE;
-            }              
-        }       
+        return $user;
+        $dbh=null;
+
     }
 
     public function CreateUser($naam, $email, $password, $status) {
         $dbh = new Database();
+        $password= password_hash($password, PASSWORD_BCRYPT, array("cost" => 12));
         $sql = "insert into users (naam, email, password, status) values (:naam, :email, :password, :status)";
         $dbh->query($sql);
         $dbh->bind(':naam', $naam);
@@ -72,7 +69,14 @@ class UserList {
         $dbh->bind(':password', $password);
         $dbh->bind(':status', $status);
         $dbh->execute();
+        $userId = $dbh->lastInsertId();
         $dbh = null;
+        return $userId;
     }
+    public function updateUser($id){
+        $dbh= new Database();
+        $sql="update users set naam = :naam, status = :status WHERE id = :id";
+    }
+
 
 }
