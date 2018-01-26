@@ -11,6 +11,7 @@ if (isset($_GET["action"]) && $_GET["action"]= 'logout'){
  * and open the template in the editor.
  */
 require_once 'userlist.php';
+require_once 'bestellenlist.php';
 
 //User registration process
 if (isset($_POST["usr"]) && $_POST["usr"] == "Create account") {
@@ -25,10 +26,11 @@ if (isset($_POST["usr"]) && $_POST["usr"] == "Create account") {
             header('location: pages/index.php?error=2');
         }else{
             //create account
-            $status = 'active';
+            $status = "active";
             $user = $create->CreateUser(trim($_POST["naam"]), $_POST["email"], trim($_POST["password"]), $status);
             $_SESSION["id"]=$user; //function createUser returns userID from the -lastInsertId
             $_SESSION["user"]=trim($_POST["naam"]);
+            $_SESSION["status"]=$status;
             header('location: pages/index.php');
         }
 
@@ -39,7 +41,7 @@ if (isset($_POST["usr"]) && $_POST["usr"] == "Create account") {
 
 //User Login process
 
-if (isset($_POST["usr"]) && $_POST["usr"] = 'login'){
+if (isset($_POST["usr"]) && $_POST["usr"] == 'login'){
     $userlog= new UserList();
     //Verify if user exist
     $userExist= $userlog->userExist($_POST["email"]);
@@ -49,7 +51,7 @@ if (isset($_POST["usr"]) && $_POST["usr"] = 'login'){
             if(password_verify($_POST["password"], $user["password"])){
                 $_SESSION["id"]= $user["id"];
                 $_SESSION["user"]= $user["naam"];
-
+                $_SESSION["status"]= $user["status"];
                 header('location: pages/index.php');
             }else{
                 header('location: pages/index.php?error=4');
@@ -58,4 +60,10 @@ if (isset($_POST["usr"]) && $_POST["usr"] = 'login'){
         header('location: pages/index.php?error=3');
     }
 
+}
+if(isset($_GET["bestel"])){
+    $bestel= new bestellist();
+    $datum =$datum = date("Y-m-d H:i:s");
+    $bestel->createbestel($_SESSION["id"], $_GET["bestel"], $datum);
+    header('location: pages/index.php');
 }

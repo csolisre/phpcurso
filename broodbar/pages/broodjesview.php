@@ -29,7 +29,14 @@ $tab = new BroodList();
                     ?>
                     <li class="list-group-item"> 
                         <strong><?php print $value->getBroodNaam(); ?></strong><br>
-                        <p><?php print $value->getBroodOmschrijving(); ?> <strong> Prijs : <?php print $value->getBroodPrijs(); ?></strong></p>                             
+                        <p><?php print $value->getBroodOmschrijving(); ?> <strong> Prijs : <?php print $value->getBroodPrijs(); ?></strong></p>
+                        <?php if (isset($_SESSION["user"])){?>
+                        <form action="../validate.php?bestel=<?php print $value->getBroodID(); ?>" method="post">
+                            <input type="submit" class="btn btn-primary" value="Bestel">
+                            
+                        </form><?php
+                        }
+                                ?>
                     </li>
             <?php } ?>
             </ul>

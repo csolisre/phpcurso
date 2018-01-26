@@ -153,7 +153,7 @@ if (isset($_GET["error"])){
         <div class="col-sm-4">
             <div class="user-form animated fadeInDownBig">
                 <h1>Welkom panaderia Leuven</h1>
-                <h4>You are logged as : <?php print $_SESSION["user"] .$_SESSION["id"];?></h4>
+                <h4>You are logged as : <?php print $_SESSION["user"] .$_SESSION["id"].$_SESSION["status"];?></h4>
             </div>
         </div>
     </div>

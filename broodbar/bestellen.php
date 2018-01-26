@@ -5,28 +5,31 @@
  * Date: 25/01/18
  * Time: 18:01
  */
+require_once 'database.php';
 class Bestel{
     private $id;
     private $broodId;
-    private $klant;
+    private $userId;
+    private $datum;
 
     /**
      * Bestel constructor.
      * @param $id
      * @param $broodId
-     * @param $klant
+     * @param $userId
      */
-    public function __construct($id, $broodId, $klant)
+    public function __construct($id, $userId, $broodId, $datum)
     {
         $this->id = $id;
         $this->broodId = $broodId;
-        $this->klant = $klant;
+        $this->userId = $userId;
+        $this->datum=$datum;
     }
 
     /**
      * @return mixed
      */
-    public function getId()
+    public function getBestelId()
     {
         return $this->id;
     }
@@ -42,9 +45,12 @@ class Bestel{
     /**
      * @return mixed
      */
-    public function getKlant()
+    public function getKlantId()
     {
-        return $this->klant;
+        return $this->userId;
+    }
+    public function getDatum() {
+        return $this->datum;
     }
 
 

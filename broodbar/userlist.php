@@ -73,9 +73,14 @@ class UserList {
         $dbh = null;
         return $userId;
     }
-    public function updateUser($id){
+    public function updateUserStatus($id,$status){
         $dbh= new Database();
-        $sql="update users set naam = :naam, status = :status WHERE id = :id";
+        $sql="update users set status = :status WHERE id = :id";
+        $dbh->query($sql);
+        $dbh->bind(':id', $id);
+        $dbh->bind(':status', $status);
+        $dbh->execute();
+        $dbh=NULL;
     }
 
 

@@ -19,19 +19,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item ">
-                    <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link active" href="index.php">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link " href="broodjesview.php">Menu</a>
+                    <a class="nav-link active" href="broodjesview.php">Menu</a>
                 </li>
-                <?php if ($_SESSION["id"] == 1) { ?>
+                <?php if (isset($_SESSION["id"]) && $_SESSION["id"] == 27) { ?>
                     <li class="nav-item">
-                        <a class="nav-link " href="bestellen.php">Orders</a>
+                        <a class="nav-link active" href="bestellenview.php">Orders</a>
                     </li>
                     <?php
                 }
                 ?>
-                <?php if ($_SESSION["id"] == 1) { ?>
+                <?php if (isset($_SESSION["id"]) && $_SESSION["id"] == 27) { ?>
                     <li class="nav-item">
                         <a class="nav-link active" href="userview.php">Users</a>
                     </li>

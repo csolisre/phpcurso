@@ -11,4 +11,9 @@
 <link href="../../css/bootstrap.css" rel="stylesheet">
 <link href="../../css/style.css" rel="stylesheet">
 <link href="../../css/animate.css" rel="stylesheet">
-
+    <script>
+$(function () {
+var activeTab = $('[href=' + location.hash + ']');
+activeTab && activeTab.tab('show');
+});
+</script>
