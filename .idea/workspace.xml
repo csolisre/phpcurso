@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f9303399-ed2d-4d1d-91bd-eea0690d1983" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/broodbar/bestellen.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/broodbar/temp.php" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/broodbar/components/menu.php" afterPath="$PROJECT_DIR$/broodbar/components/menu.php" />
-      <change beforePath="$PROJECT_DIR$/broodbar/pages/broodjesview.php" afterPath="$PROJECT_DIR$/broodbar/pages/broodjesview.php" />
-      <change beforePath="$PROJECT_DIR$/broodbar/pages/index.php" afterPath="$PROJECT_DIR$/broodbar/pages/index.php" />
-      <change beforePath="$PROJECT_DIR$/broodbar/pages/userview.php" afterPath="$PROJECT_DIR$/broodbar/pages/userview.php" />
-      <change beforePath="$PROJECT_DIR$/broodbar/userlist.php" afterPath="$PROJECT_DIR$/broodbar/userlist.php" />
-      <change beforePath="$PROJECT_DIR$/broodbar/users.php" afterPath="$PROJECT_DIR$/broodbar/users.php" />
-      <change beforePath="$PROJECT_DIR$/broodbar/validate.php" afterPath="$PROJECT_DIR$/broodbar/validate.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/broodbar/components/header.php" afterPath="$PROJECT_DIR$/broodbar/components/header.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,19 +13,13 @@
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
     <option name="GROUP_SCHEMA" value="true" />
     <option name="GROUP_CONTENTS" value="false" />
     <option name="SORT_POSITIONED" value="false" />
     <option name="SHOW_TABLE_DETAILS" value="true" />
     <option name="SHOW_EMPTY_GROUPS" value="false" />
     <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="broodjesbar@localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="FavoritesManager">
@@ -42,60 +27,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="userlist.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/broodbar/userlist.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1155">
-              <caret line="77" column="78" lean-forward="false" selection-start-line="77" selection-start-column="78" selection-end-line="77" selection-end-column="78" />
-              <folding>
-                <marker date="1516911361000" expanded="true" signature="216:257" ph="select id, n... users" />
-                <marker date="1516911361000" expanded="true" signature="898:942" ph="select email... users" />
-                <marker date="1516911361000" expanded="true" signature="1246:1318" ph="select id na... users" />
-                <marker date="1516911361000" expanded="true" signature="1689:1781" ph="insert into users... " />
-                <marker date="1516911361000" expanded="true" signature="2166:2228" ph="update users... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="moduleList.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/deel9/moduleangepast/module/moduleList.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="11" column="35" lean-forward="false" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
-              <folding>
-                <marker date="1516124721000" expanded="true" signature="405:454" ph="select id, n... modules" />
-                <marker date="1516124721000" expanded="true" signature="873:919" ph="select naam,... modules" />
-                <marker date="1516124721000" expanded="true" signature="1305:1367" ph="update modules... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="userview.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/broodbar/pages/userview.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="6" lean-forward="false" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="users.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/broodbar/users.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/broodbar/pages/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
+            <state relative-caret-position="17">
               <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="33" selection-end-column="6" />
               <folding />
             </state>
@@ -105,7 +40,7 @@
       <file leaf-file-name="broodjesview.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/broodbar/pages/broodjesview.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
+            <state relative-caret-position="272">
               <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
               <folding />
             </state>
@@ -115,7 +50,7 @@
       <file leaf-file-name="menu.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/broodbar/components/menu.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
+            <state relative-caret-position="272">
               <caret line="20" column="21" lean-forward="false" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
               <folding />
             </state>
@@ -125,7 +60,7 @@
       <file leaf-file-name="bestellen.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/broodbar/bestellen.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
+            <state relative-caret-position="816">
               <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
               <folding />
             </state>
@@ -135,7 +70,7 @@
       <file leaf-file-name="validate.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/broodbar/validate.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
+            <state relative-caret-position="612">
               <caret line="36" column="5" lean-forward="false" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
               <folding />
             </state>
@@ -220,8 +155,9 @@
     <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1340" />
+    <option name="y" value="89" />
     <option name="width" value="1920" />
     <option name="height" value="977" />
   </component>
@@ -240,7 +176,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -276,6 +211,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -319,6 +255,7 @@
       <workItem from="1516215850961" duration="48257000" />
       <workItem from="1516730785993" duration="18471000" />
       <workItem from="1516911385310" duration="11000" />
+      <workItem from="1517302419298" duration="46000" />
     </task>
     <task id="LOCAL-00001" summary="16ene casa">
       <created>1516132181603</created>
@@ -352,22 +289,22 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74408000" />
+    <option name="totallyTimeSpent" value="74454000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="977" extended-state="6" />
+    <frame x="1272" y="-8" width="1936" height="1176" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2603834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26119402" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32945284" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1656017" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1641791" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3290735" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3993015" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960597" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3993015" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -375,6 +312,7 @@
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32945284" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32945284" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32945284" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
@@ -468,13 +406,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="2477" column="24" lean-forward="false" selection-start-line="2477" selection-start-column="24" selection-end-line="2477" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/css/bootstrap.css" />
     <entry file="file://$PROJECT_DIR$/deel7/schatt.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-140">
@@ -483,177 +415,33 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/broodjes2/.php" />
-    <entry file="file://$PROJECT_DIR$/deel9/moduleangepast/filmangepast/overzicht.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="11" lean-forward="true" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
-          <folding>
-            <marker date="1516124721000" expanded="true" signature="483:600" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deel9/moduleangepast/filmangepast/films.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/deel9/moduleangepast/filmangepast/overzicht.php" />
+    <entry file="file://$PROJECT_DIR$/deel9/moduleangepast/filmangepast/films.php" />
     <entry file="file://$PROJECT_DIR$/broodjes2/validaruser.php" />
-    <entry file="file://$PROJECT_DIR$/deel9/moduleangepast/filmangepast/filmedit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="5" lean-forward="false" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/deel9/moduleangepast/filmangepast/filmedit.php" />
     <entry file="file://$PROJECT_DIR$/broodjes2/user.php" />
     <entry file="file://$PROJECT_DIR$/broodjes2/index.php" />
     <entry file="file://$PROJECT_DIR$/broodjes2/userlist.php" />
     <entry file="file://$PROJECT_DIR$/broodjes2/userviews.php" />
-    <entry file="file://$PROJECT_DIR$/deel9/moduleangepast/module/overzicht.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="13" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="27" selection-end-column="13" />
-          <folding>
-            <marker date="1516124721000" expanded="true" signature="495:615" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deel9/moduleangepast/module/dbGegevensBewerken.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deel9/moduleangepast/module/module.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deel9/moduleangepast/filmangepast/filmList.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1516124721000" expanded="true" signature="402:454" ph="select id, t... films" />
-            <marker date="1516124721000" expanded="true" signature="869:917" ph="select titel... films" />
-            <marker date="1516124721000" expanded="true" signature="1297:1365" ph="update films... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deel9/chat/bericht.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/deel9/moduleangepast/module/overzicht.php" />
+    <entry file="file://$PROJECT_DIR$/deel9/moduleangepast/module/dbGegevensBewerken.php" />
+    <entry file="file://$PROJECT_DIR$/deel9/moduleangepast/module/module.php" />
+    <entry file="file://$PROJECT_DIR$/deel9/moduleangepast/filmangepast/filmList.php" />
+    <entry file="file://$PROJECT_DIR$/deel9/chat/bericht.php" />
     <entry file="file://$PROJECT_DIR$/broodbar/userview.php" />
     <entry file="file://$PROJECT_DIR$/brodjes/existe.php" />
     <entry file="file://$PROJECT_DIR$/brodjes/broodjes.php" />
-    <entry file="file://$PROJECT_DIR$/brodjes/validar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="54" column="62" lean-forward="false" selection-start-line="54" selection-start-column="62" selection-end-line="54" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deel9/chat/chatlist.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="36" column="34" lean-forward="false" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
-          <folding>
-            <marker date="1516645065000" expanded="true" signature="537:615" ph="select id, n... chatberichten" />
-            <marker date="1516645065000" expanded="true" signature="1046:1139" ph="insert into chatberichten... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deel9/chat/chatform.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="474">
-          <caret line="36" column="49" lean-forward="true" selection-start-line="36" selection-start-column="49" selection-end-line="36" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/brodjes/broodjeslist.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="125" lean-forward="false" selection-start-line="26" selection-start-column="125" selection-end-line="26" selection-end-column="125" />
-          <folding>
-            <marker date="1516638151000" expanded="true" signature="478:542" ph="select Id, N... broodjes" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/brodjes/bestellen.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="17" lean-forward="false" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/brodjes/overzicht.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="38" column="17" lean-forward="false" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/brodjes/users.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1516730804000" expanded="true" signature="384:476" ph="insert into users... " />
-            <marker date="1516730804000" expanded="true" signature="1492:1521" ph="select email... users" />
-            <marker date="1516730804000" expanded="true" signature="1492:1537" ph="select email... users" />
-            <marker date="1516730804000" expanded="true" signature="1940:2029" ph="select email... users" />
-            <marker date="1516730804000" expanded="true" signature="2361:2402" ph="select id, n... users" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/brodjes/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="54" column="17" lean-forward="false" selection-start-line="52" selection-start-column="12" selection-end-line="54" selection-end-column="17" />
-          <folding>
-            <marker date="1516730804000" expanded="true" signature="2636:2656" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/brodjes/bestellinlist.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="15" lean-forward="false" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
-          <folding>
-            <marker date="1516647474000" expanded="true" signature="413:457" ph="select id, u... bestellen" />
-            <marker date="1516647474000" expanded="true" signature="1019:1092" ph="insert into bestellen... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/brodjes/userview.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="45" column="35" lean-forward="false" selection-start-line="45" selection-start-column="35" selection-end-line="45" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/nemo.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/brodjes/validar.php" />
+    <entry file="file://$PROJECT_DIR$/deel9/chat/chatlist.php" />
+    <entry file="file://$PROJECT_DIR$/deel9/chat/chatform.php" />
+    <entry file="file://$PROJECT_DIR$/brodjes/broodjeslist.php" />
+    <entry file="file://$PROJECT_DIR$/brodjes/bestellen.php" />
+    <entry file="file://$PROJECT_DIR$/brodjes/overzicht.php" />
+    <entry file="file://$PROJECT_DIR$/brodjes/users.php" />
+    <entry file="file://$PROJECT_DIR$/brodjes/index.php" />
+    <entry file="file://$PROJECT_DIR$/brodjes/bestellinlist.php" />
+    <entry file="file://$PROJECT_DIR$/brodjes/userview.php" />
+    <entry file="file://$PROJECT_DIR$/img/nemo.jpg" />
     <entry file="file://$PROJECT_DIR$/broodbar/components/header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -661,61 +449,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-740">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css" />
     <entry file="file://$PROJECT_DIR$/broodbar/broodlist.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1516867333000" expanded="true" signature="359:409" ph="select ID, N... broodjes" />
-            <marker date="1516867333000" expanded="true" signature="845:910" ph="select ID, N... broodjes" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/BroodjesZaak Beta/Emporium/register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1516726788000" expanded="true" signature="622:739" ph="INSERT INTO users... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Downloads/BroodjesZaak Beta/Emporium/register.php" />
     <entry file="file://$PROJECT_DIR$/broodbar/temp.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="287">
           <caret line="25" column="12" lean-forward="true" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/broodbar/validate.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
+        <state relative-caret-position="612">
           <caret line="36" column="5" lean-forward="false" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/broodbar/pages/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="33" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/broodbar/pages/broodjesview.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
+        <state relative-caret-position="272">
           <caret line="16" column="14" lean-forward="false" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
           <folding />
         </state>
@@ -723,7 +483,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/broodbar/components/menu.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
+        <state relative-caret-position="272">
           <caret line="20" column="21" lean-forward="false" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
           <folding />
         </state>
@@ -731,12 +491,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/broodbar/bestellen.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
+        <state relative-caret-position="816">
           <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/broodbar/userlist.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="77" column="64" lean-forward="false" selection-start-line="77" selection-start-column="64" selection-end-line="77" selection-end-column="64" />
+          <folding>
+            <marker date="1516956467766" expanded="true" signature="216:257" ph="select id, n... users" />
+            <marker date="1516956467766" expanded="true" signature="898:942" ph="select email... users" />
+            <marker date="1516956467766" expanded="true" signature="1246:1318" ph="select id, n... users" />
+            <marker date="1516956467766" expanded="true" signature="1689:1781" ph="insert into users... " />
+            <marker date="1516956467766" expanded="true" signature="2180:2228" ph="update users... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deel9/moduleangepast/module/moduleList.php" />
     <entry file="file://$PROJECT_DIR$/broodbar/pages/userview.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -747,35 +522,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/broodbar/users.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
+        <state relative-caret-position="289">
           <caret line="17" column="12" lean-forward="false" selection-start-line="17" selection-start-column="12" selection-end-line="17" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/broodbar/userlist.php">
+    <entry file="file://$PROJECT_DIR$/broodbar/pages/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1155">
-          <caret line="77" column="78" lean-forward="false" selection-start-line="77" selection-start-column="78" selection-end-line="77" selection-end-column="78" />
-          <folding>
-            <marker date="1516911361000" expanded="true" signature="216:257" ph="select id, n... users" />
-            <marker date="1516911361000" expanded="true" signature="898:942" ph="select email... users" />
-            <marker date="1516911361000" expanded="true" signature="1246:1318" ph="select id na... users" />
-            <marker date="1516911361000" expanded="true" signature="1689:1781" ph="insert into users... " />
-            <marker date="1516911361000" expanded="true" signature="2166:2228" ph="update users... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deel9/moduleangepast/module/moduleList.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="11" column="35" lean-forward="false" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
-          <folding>
-            <marker date="1516124721000" expanded="true" signature="405:454" ph="select id, n... modules" />
-            <marker date="1516124721000" expanded="true" signature="873:919" ph="select naam,... modules" />
-            <marker date="1516124721000" expanded="true" signature="1305:1367" ph="update modules... " />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="33" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
