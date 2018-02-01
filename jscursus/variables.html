@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div><h1>Variables</h1></div>
+        <p id="parrafo1"></p>
+        <p id="parrafo2"></p>
+         <p id="parrafo3"></p>
+        <script>
+            /* variables en javascript 
+             * -identificadores unicos
+             * -Recomendable que los nombres sean descriptivos
+             * Empiezan con letra, dollar o guin bajo
+             * pueden contener cadenas o numero cadenas=string
+             * Son sensibles a las mayusculas
+             * No se pueden usar palabras reservadas
+             */
+            
+            var nombre;
+            //Mostramos el valor de la variable
+            document.getElementById("parrafo1").innerHTML = nombre;
+            
+            //asiganar el valor
+            nombre = "Carlos Solis";
+            document.getElementById("parrafo2").innerHTML = nombre;
+
+            //Varis variables en las mismas sentencias
+
+            var pais, nacimiento;
+            var pais ="reino unido", nacimiento=1978;
+
+            //asignar operaciones a una veriable
+
+            var nombreApellido = "Carlos"+ " " + "solis";
+            var fallecimiento = nacimiento +37;
+            document.getElementById("parrafo3").innerHTML = nombreApellido + " " +"nacio en " + pais + " en " + nacimiento
+            + " y murio en " + fallecimiento;
+
+        </script>
+    </body>
+</html>

@@ -112,7 +112,6 @@ link {}
 
 h1#kop {
     border-bottom: 1px solid;
-    
 }
 
 div#container {
@@ -120,3 +119,38 @@ div#container {
     margin-left:  auto;
     margin-right:  auto;
 }
+
+li {
+    border-bottom: 1px solid;
+    color: #462471;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+
+body#this {
+    background-color:  azure;
+    padding: 0;
+    margin: 0;
+    font-family: 'Abril Fatface', cursive;
+}
+
+div#top {
+    background-color:  #273c3c;
+    /* overflow: auto; */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: block;
+    clear:  both;
+    /* margin-bottom: 100px; */
+}
+
+.container {
+    max-width: 900px;
+    margin-left:  auto;
+    margin-left:  auto;
+    margin-right:  auto;
+}
+ 
+.content {clear: both;height: auto;overflow: auto;margin-top: 84px;}
