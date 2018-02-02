@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>Funciones anonimas</div>
+        <script>
+            // son funciones que no tienen nombre
+
+            //normaltente es function + nombre +(param)+ {...}
+            //anonima es lo mismo pero sin nombre
+
+            var producto = function (a,b){
+                return a*b;
+            }
+
+            var resultado= producto(3,6);
+            //alert(resultado);
+
+            //Constructor function()
+
+            var miFuncion = new Function ("a","b", "return a - b" ); // aqui el return esta declarado como string!!!!
+            var resultado2 = miFuncion(5,7);
+            alert(resultado2);
+
+            //Funciones aunonimas autoinvocadas
+
+            (function(){alert("hola");}()); //tiene que estar toda entre parentesis y ademas ()despues de la funcion
+
+
+        </script>
+    </body>
+</html>

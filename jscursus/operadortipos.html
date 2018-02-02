@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>Operador de tipos</div>
+        <script>
+            // TYPEOF: devielve el tipo de dato de una variable
+
+            var cadena = "Some text";
+            var numero = 3.14;
+            var bool = true;
+            var lista =[1,2,3,4];
+            var registro = {nombre:"ada", apellido: "solis"};
+            var fecha = new Date;
+            var miFuncion = function miFun() {alter("hola");};
+            var vacia=null;
+            var sinDefinir;
+
+            //alert(typeof cadena);//string
+            //alert(typeof numero) //number
+            //alert(typeof bool);// boolean
+            //alert(typeof lista);//object
+            //alert(typeof registro);//object
+            //alert(typeof fecha);//function
+            //alert(typeof miFuncion);//function
+            //alert(typeof vacia);//object por que si tiene un valor en este caso "null"
+            //alert(typeof sinDefinir);//Undefined
+
+            //INSTANCEOF: nos devuelve true si un objeto es una instancia de otro especificado
+
+            var animales= ["perro", "gato", "raton"];
+            alert(animales instanceof Array);// True si animales es un array
+            alert(animales instanceof Object);// True pues una array es un objeto
+            alert(animales instanceof Number);// false la variable no es tipo number 
+
+        </script>
+    </body>
+</html>

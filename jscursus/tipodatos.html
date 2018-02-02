@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>Tipo de datos</div>
+        
+        <script>
+            var x = "carlos" +5; //en php no funciona pero java convierte el numero en string
+
+            //Strigns
+
+            var cadena = "some text";
+            var cadena2 = "some 'text'";
+
+            //Numeros
+
+            var numero = 3;
+            var decimal =3.5;
+            var cientifica = 12e2;// numero de ceros despues de la "e" en este caso 2
+            var cientifica = 12e-2;// numero de ceros antes de la "e" en este caso -2
+            //alert(numero+decimal); 
+
+            //Boolean
+
+            var cierto= true;
+            var falso = false;
+
+            //Arrays
+
+            var lista = [1,4,6,8];
+            var listaMix = [1,4,"text",8];
+            //alert(listaMix[2]);
+
+            //Objetos
+
+            var animal ={nombre: "lola", tipo: "perro", raza:"desc", edad:10};
+
+            //Operador typeof
+
+           // alert(typeof animal);
+
+           //UNDEFINED
+           var objetoSinDefinir;
+           //alert(objetoSinDefinir); //devuelve undefined
+
+           //VACIO
+
+           var cadena3 = "";
+           //alert(cadena3);
+
+           //NULO
+           var animal=null;
+           alert(animal + typeof animal);
+
+
+           //NULOS vs no definidos 
+         //  null es si elmacena algo undefined si si tiene tipo de datos definidos
+
+
+
+        </script>
+    </body>
+</html>

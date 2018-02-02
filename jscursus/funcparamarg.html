@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>Funciones, parametros y argumentos</div>
+        <script>
+
+        //Parametros y argumentos
+        //Una funcion puede tener 0 o mas parametros
+        // parametros (a,b) --  argumentos (5,8)
+
+        //Rglas de los parametros
+        //No se especifica su tipo
+        // No se verifican los tipode los argumentos
+        //No se comprueba el numero de los argumentos
+
+        // parametros por defecto es cuendo llamamos a una funcion con menos argumentos de los declarados
+
+        function suma (a, b){
+            if (b === undefined){ //con esta condicion asigna un valor a b en caso de no estar
+            b=0;}
+            return a+b;
+        }
+            var resultado = suma(5);// Regresa NAN not a number
+            //alert(resultado);
+
+
+            // Parametros en exceso llamar a una funcion con mas pârametros de lo que tiene la funcion
+                //Aqui no sabemos cuanros argumentos nos pasan
+               function valores(){
+                    alert("el numero de argumentos es " + arguments.length);
+                    for (var i=0; i < arguments.length; i++ ){
+                        alert("argumento " + i + "="+ arguments[i]);
+                    }
+                }
+
+                valores (4,6,8,2);
+
+        </script>
+    </body>
+</html>

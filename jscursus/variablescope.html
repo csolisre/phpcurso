@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>Variables Scope</div>
+        <script>
+            //variable local variable dentro de una funcion
+            //Unicamente se pueden utilizar dentro de la funcion
+            //Por eso se pued utilizar varias veces siempre aue esten en funciones diferentes
+            //desaparecen al salir de la funcion
+            function miFuncion(){
+                var saludo ="hola"; 
+                alert(saludo);              
+            }
+
+            //miFuncion();
+                
+                //variables globales se definen fueras de la fucion 
+                //Las variables goblales desaparecen cuando se sale de la pagina
+
+                var despedida ="adios";
+
+                function despedir(){
+                    alert(despedida);
+                }
+
+               // despedir();
+               // alert(despedida);
+
+                // Variables automaticamente globales
+                //Cuendo asignamos un valor a una variable no declarada se convierte en global 
+
+                function preguntar(){
+                    pregunta = "de que colo es?"
+                }
+                //preguntar();
+               // alert(pregunta);
+
+                //Variables locales y globales con el mismo nombre
+
+                var miVariable ="fuera";
+                function ambito(){
+                    var miVariable ="dentro";
+                    alert(miVariable); 
+                }
+                //alert(miVariable);//fuera de la funcion
+                //ambito(); // dentro de la funcion   
+                //alert(miVariable);//fuera de la funcion
+
+
+                //variable globar redefinida dentro de una funcion
+                var miVariable2 ="fuera";
+                function ambito2(){
+                    /*var*/ miVariable2 ="dentro";
+                    alert(miVariable2); 
+                }
+                alert(miVariable2);//fuera de la funcion
+                ambito2(); // dentro de la funcion   
+                alert(miVariable2);//la redefinio dentro de la variable y ahora muestra dentro Se redefinio eliminando la palabra "var"
+                
+
+        </script>
+    </body>
+</html>
