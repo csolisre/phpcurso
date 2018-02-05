@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Objetos constructores</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>Objetos constructores</div>
+        <script>
+            //Constructor string: Almacena strings
+
+            var x= new string(); // no se recomienda mucho en su caso mejor datos primitivos
+            var y= "some text"; // lo mismo para Number, boolean(string, boolean y number)
+
+
+            //Constructor tipo array
+
+            var x4 = new array();
+                //mejor usar
+            var y3 = [];
+
+            //constructor tipo RegExp (expresiones regulares)
+
+            var x5 = new RegExp();
+                //Mejor usar
+            var y5 = /()/;
+
+            //Constructor tipo Funcion
+
+            var x6 = new Function();
+                //Mejor usar
+            var y6 = function ();
+
+
+            //Constructor tipo date
+            
+            var x7= new Date();
+
+            // Constructor Math no se puede declarar con new por que es un objeto global
+
+            //Constructor tipo Object
+
+            var x8 = {Expesion} // var programadora = {nombre: "carlos", apellido:"solis", fecha:"agosto"};
+
+
+
+
+        </script>
+    </body>
+</html>

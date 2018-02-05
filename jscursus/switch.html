@@ -11,31 +11,32 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div>Sentencia Switch</div>
+        <div>Sentencia Switchd</div>
         <script>
             //Ejecuta una condicionante para hcer diferentes acciones
             //La condicion se hace una sola vez
 
-            var edad=1;
-            var msg=10;
-            switch(edad){
+            var edad = 4 ;
+            var msg = "";
+            switch(edad) {
                 case 1:
-                 var msg ="recien nacido";
+              msg ="recien nacido";
                     //alert("recien nacido");
                     break;
-                case 2:
-                 var smg="solo dos anos de edad";
-                    //alert("solo dos anos de edad");
+                 case 4: 
+                    msg = "cuatro anos";
                     break;
-                case 4:
-                 var smg ="cuatro anos de edad";
-                   // alert("cuatro anos de edad");
+                 case 2:
+                 case 3:
+                 case 5:
+                    msg = "dos tres cuatro y cinco";
                     break;
-                default:
-                 var msg = "mas de cuatro anos de edad";
-                    //alert("mas de cuatro anos de edad");
+                 default:
+                    msg = "no encontrado";
+               
             }
             alert(msg);
         </script>
+        
     </body>
 </html>

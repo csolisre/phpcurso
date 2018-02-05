@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>Objetos String</div>
+        <script>
+            var daw = "desarrollo aplicaciones web";
+            var dam  = 'desarrollo aplicaciones multi';
+            var asir = "administracion de 'sistemas informaticos' en red";
+            var smr = "sistemas \" Informaticos\" y redes";
+            var ciclos = new String("");
+
+            //concatenar string
+
+            ciclos += "some text 1 \n" // "\n" es un salto de linea
+            ciclos += daw + ", " + dam + " y " + asir + "\n";
+            ciclos += " y un ciclo de  grado medio: " + "\n" ;
+            ciclos +=smr;
+            // alert(ciclos);
+
+            //PROPIEDADES
+
+            //alert("la longitud de la cadena es " +ciclos.length);
+
+            //Metodos
+
+                //Busqueda charAt: nos devueleve el caracter de una posocion (inicia con Cero!!)
+
+                //alert("el caracter de la posicioon 20 es " + ciclos.charAt(28));
+
+                //Indexof(<caracter>): Devielve la primera posicion de un carater en un string
+
+               // alert ("la primera posicion en aue aparece la letra c en la cadena es "+ciclos.indexOf("c"));
+
+                //LastIndexof devuelve la ultima posicion de un caracter en el string
+
+                //alert (" la utima vez que la letra c aparece es en la posicon numero" + ciclos.lastIndexOf("c"));
+
+                //Search(cadena|expresion)
+
+                //alert("Busca la cadena web en la valiable dw" + daw.search("web"));
+
+                //match(expresion)
+
+                //alert();// mas adelante
+
+                //Compare(<cadena>): devueleve 1-(antes) , 0(igual) y 1(despues) caracteres alfabeticos
+
+               // alert("es daw menor que dam" + daw.localeCompare(dam));
+
+                //Incluye, empieza o termina
+
+                /*alert("uncluye la palabra 'aplicaciones'" + daw.includes("aplicaciones"))
+                alert ("empieza con desarrollo " + daw.startsWith("desarrllo")); 
+                alert("termina con la palabra web"+daw.endsWith("web"));*/
+
+                //Concatenar cadena usando metodo
+
+                //alert("concatene daw con dam" +daw.concat(dam));
+                //repetir
+
+               // alert("repite daw "+ daw.repeat(13));   
+
+                //extraer: slice(posicion inicial, posicion final) devueleve el string entre ambas posiciones
+
+                //alert("la cadena que hay entre 4 y 6 daw es " +daw.slice(4,26)); //(0,1) primer caracter, (-1 ultimo caracter) 
+
+                //substring: (posicion inicial, posicion final) devueleve el string entre ambas posiciones
+
+                //alert("la cadena que hay entre 4 y 6 daw es " +daw.slice(4,26));
+
+                //substr: (posicion inicial, numero de caracteres) devueleve el string entre ambas posiciones
+
+                //alert("la cadena de 5 caracteres que hay apartir del caracter 7 es " +daw.substr(7,5));
+
+                //Split(caracter,[numero de veces]) divide el string en un array separadas por el caracter del primer parametro
+
+                //alert("la cadena daw separada por es espacios es " + daw.split(" "));
+                //alert("la cadena daw separada por es espacios es " + daw.split(" ", 2));//seleciona solo las dos primeras encontradas
+
+                //trim(string) extrae los espacion del inicio y del final
+
+                //alert(" la cadena sin espacios   ".trim());
+
+                //Mayusculas y minusculas
+                //toLowerCase(string)
+
+                //alert(daw.toLowerCase());
+
+                //alert(daw.toUpperCase());
+
+                // Metodos espaciales
+                    //toString: devueleve en valor del objeto string
+        </script>
+    </body>
+</html>
