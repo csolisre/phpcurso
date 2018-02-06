@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Date objects</title>
+
+
+</head>
+<body>
+
+<div>Date objects</div>
+
+<script>
+  //Los meses y los dias de la semana empiezan en cero!!! siendo el 0 el domingo
+
+        //creacion de fecha actual
+
+        //var actual = new Date();
+        //alert(actual);
+
+        // crear fechas desde string LOS DIAS Y FECHAS MENORES A 10 DEBEN TENER UN CERO AL INICIO
+
+        var date1 = new Date("Wed Mar 25 2015 09:23:45"); // ignora si el dia de la semana esta mal
+        var date2 = new Date("october 12, 2016 10:30:00");
+        var date3 = new Date("January 25 2015");
+        var date4 = new Date("Jan 25 2015");
+        var date5 = new Date("2016-05-12");//yyyy/mm/dd
+        var date6 = new Date("2016/05/12");//yyyy/mm/dd
+        var date7 = new Date("2016-05");//el dia se sustituye por 1
+        var date8 = new Date("2016");// el dia y el mes se sustituyen
+/*
+        alert(date1);
+        alert(date2);
+        alert(date3);
+        alert(date4);
+        alert(date5);
+        alert(date6);
+        alert(date7);
+        alert(date8);
+
+        // fechas con milisegundos
+
+        var date10 = new Date (86400000);//los milisegundos desde el dia 1 enero de 1970
+        alert("fecha en milisegundos es "+ date10);
+
+        //Creacion de fechas con numeros
+
+        var date11 = new Date(2015,11,10,14,30,25) //YYYY/MM/DD/H/M/S como inician en cero 11 es diciembre!!!!
+        var fechacorto = new Date(2015,11,10);
+
+
+        alert(fechacorto);*/
+
+        //como imprimir fechas!!!!
+
+        var fecha = new Date();
+        alert("fecha sencilla"+fecha); //fecha comppleta
+        alert("fecha to string" +fecha.toString());
+        alert("fecha tu UTCString"+fecha.toUTCString());
+        alert("fecha toDateString"+fecha.toDateString());
+
+
+
+</script>
+
+</body>
+</html>

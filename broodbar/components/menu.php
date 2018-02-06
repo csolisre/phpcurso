@@ -24,14 +24,14 @@
                 <li class="nav-item">
                     <a class="nav-link active" href="broodjesview.php">Menu</a>
                 </li>
-                <?php if (isset($_SESSION["id"]) && $_SESSION["id"] == 27) { ?>
+                <?php if (isset($_SESSION["id"]) && $_SESSION["id"] == 26) { ?>
                     <li class="nav-item">
                         <a class="nav-link active" href="bestellenview.php">Orders</a>
                     </li>
                     <?php
                 }
                 ?>
-                <?php if (isset($_SESSION["id"]) && $_SESSION["id"] == 27) { ?>
+                <?php if (isset($_SESSION["id"]) && $_SESSION["id"] == 26) { ?>
                     <li class="nav-item">
                         <a class="nav-link active" href="userview.php">Users</a>
                     </li>

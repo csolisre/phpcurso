@@ -37,7 +37,9 @@ class Bestellist{
      public function getBestellenList2()
     {
         $db = new Database();
-        $sql = "select bestellen.Id, users.naam, broodjes.Naam, bestellen.datum from bestellen inner join users on users.id = bestellen.userId inner join broodjes on broodjes.ID = bestellen.broodId ";
+        $sql = "select bestellen.Id, users.naam, broodjes.Naam, bestellen.datum from bestellen 
+                inner join users on users.id = bestellen.userId 
+                inner join broodjes on broodjes.ID = bestellen.broodId ";
         $db->query($sql);
         $resultSet = $db->resultset(); //execute gebeurt in functie resultset dus staat hier niet maar in Database.php
         $db = null;

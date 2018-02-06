@@ -66,4 +66,5 @@ if(isset($_GET["bestel"])){
     $datum =$datum = date("Y-m-d H:i:s");
     $bestel->createbestel($_SESSION["id"], $_GET["bestel"], $datum);
     header('location: pages/index.php');
+
 }

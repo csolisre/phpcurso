@@ -26,7 +26,7 @@ $tab = new Bestellist();
                 <?php
                 $bestel= $tab->GetBestellenList2();
                 foreach ($bestel as $value) {?>
-                <li class="list-group-item"><?php print $value->getBestelId(); ?> datum <?php print $value->getDatum(); ?> <?php print $value->getKlantId(); ?> </li>
+                <li class="list-group-item"><?php print $value->getBestelId(); ?> datum <?php print $value->getDatum(); ?> <?php print $value->getKlantId(); ?> <?php print $value->getBroodId(); ?></li>
                 <?php
                 }
                 ?>

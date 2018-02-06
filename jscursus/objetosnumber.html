@@ -54,7 +54,7 @@ and open the template in the editor.
            alert("var sencilla es " +typeof(num)); //devuelve numner
            alert("variable por objeto es"+typeof(num2));//devuelve object
            alert ("tienen el mismo valor? "+(num == num2)); //True
-           alert("tienen el mismo valor y tipo? " +(num === num2));*/
+           alert("tienen el mismo valor y tipo? " +(num === num2));
 
            //PROPIEDADES
 
@@ -74,6 +74,46 @@ and open the template in the editor.
 
                 var numnan = Number.NaN;
                 alert("NaN = " + numnan);
+
+                //Metodos
+                    //toFiexd(numero de decimales) Nos devuelve un string con el numero de decimales indicada
+
+                        var x = 9.8765;
+                            alert(x.toFixed(0));// quitadecimales y aproxima 
+                            alert(x.toFixed(2));//redondea lo pimeros dos decimales.
+
+                    //toPrecision(num cifras) es una cadena con el numero especifico de cifras indicado pero aqui incluye 
+                    //el entero y el decimal.
+                    var y =9.8765;  
+                            alert(y.toPrecision());// quitadecimales y aproxima 
+                            alert(y.toPrecision(2));//redondea lo pimeros dos decimales.9.9 dos numero incluyendo decimales y enteros
+
+                    
+                    //toExponential cadena con el numero redondeado a notacion cientifica.
+                        
+                        z= 876575423
+                    alert(z.toExponential(2));
+
+                    //valueOf devuelve el valor primitivo de un objeto
+                    //toString devuelve la cadena de un numero
+                    var j= 123;
+                    alert(j.toString());
+                    alert((123+7).toString());
+
+                    // Metodo global para convertir variables en numeros
+
+                    //Number() devuelve el valor numerico de una variable
+                    alert(Number(true)); //devuelve 1
+                    alert(Number(false)); //devueleve 0
+                    alert(Number(new Date)); //devuelve el numero de milisegundos desde el dia 1/1/1970
+                    alert(Number("10")); //devuelve el numero de la cadena
+                    alert(Number("text")); //devuelve NaN */
+
+
+                    // parseInt()muestra los enteros
+                    //parseFloat() devuelve los decimales
+                        alert(parseInt("10.6")); //devuelve 10
+                        alert(parseInt("10 20"));//devuelve solo el primer numero en este caso 10 en caso de que el primer numero sea text regresa NaN
 
         </script>
     </body>
