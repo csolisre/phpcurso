@@ -44,7 +44,7 @@ if (isset($_GET["error"])){
         <!-- Slide One - Set the background image for this slide in the line below -->
         <div class="carousel-item active" style="background-image: url('../../img/bread-923865_1920.jpg')">
             <div class="carousel-caption d-none d-md-block">
-                <h3>.</h3>
+                <h3>dfgdfgdfgdfg</h3>
                 <p><?php
             if (isset($_SESSION["user"])) {
                 print $_SESSION["user"];

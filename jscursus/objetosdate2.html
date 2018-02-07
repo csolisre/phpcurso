@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>Objetos date 2</div>
+        
+        <script>
+            //metodo de tipo get extra de una fechea un dato en particular
+
+            var fecha = new Date("October 1, 2016 10:30:20");
+
+           /* alert(fecha.getDay()+" "+fecha.getDate()+" "+fecha.getMonth()+" "+fecha.getFullYear());
+            alert(fecha.getHours()+" " + fecha.getMinutes()+" "+fecha.getSeconds());
+            */
+
+            // metodos set asignar fecha
+
+            fecha.setDate(31);
+            fecha.setMonth(11);
+            fecha.setFullYear(2031);
+            fecha.setHours(23);
+            fecha.setMinutes(59);
+            fecha.setSeconds(12);
+
+            alert(fecha);
+            alert(fecha.toString());
+
+            //Ejeplo de calculo de horas
+
+            fecha.setMonth(fecha.getMonth()+3);//anade tres meses a la feche 11 es diciembre mas tres es Marzo
+            alert(fecha.toString());
+
+
+
+        </script>
+    </body>
+</html>

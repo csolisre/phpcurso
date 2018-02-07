@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+    <p id="ventana">
+    </p>
+        <div>Window</div>
+        <script>
+             //Objetos de alto nivel: dependen del navegador
+
+                            //window
+                            //screen
+                            //navigator
+                            //location
+                            //history
+                            //document
+
+              /* Window represneta una ventana del navegador abierta
+              **si la ventana contine <iframe> el navergadpr crea un objeto "window" para cada <iframe>
+              **Todfos los objetos, funciones, variables ... son miembros del objeto window las funciones son sus metodos;
+                las variables globales y el DOM son sus propiedades.
+              **No todos los met sirven en todos los navegadores hay que checar su compatibilidad*/
+
+              //Propiedades Basicas
+                    //Nombre de la ventaba
+               /* window.name= "Mi ventana";
+                var texto="";
+                texto+="<br>Nombre"+window.name;// nos da el nombre de la ventana
+
+                     //tamano de la ventana incluyendo el scroll bar
+
+                     texto+="<br> Ancho "+ window.outerWidth;
+                     texto+="<br> Alto "+ window.outerHeight;
+
+                     //Tamano de la ventana efectivo sin los scroll bar
+
+                     texto+="<br> Ancho "+ window.innerWidth;
+                     texto+="<br> Alto "+ window.innerHeight;
+
+                      //Saber donde se encunetra el scroll horizontal y vertical
+
+                     texto+="<br> horizontal "+ window.pageXOffset;
+                     texto+="<br> vertical "+ window.pageYOffset;
+
+                      //Distancia desde la esquina superior izquierda
+
+                     texto+="<br> distancia desde la izquierda "+ window.screenX;
+                     texto+="<br> distancia desde arriba "+ window.screenY;
+
+                     document.getElementById("ventana").innerHTML=texto;*/
+
+                     //Propiedades de Ifames
+                         
+                         /*frames: devuelve todos elementos iframe de la ventana
+                         frameElement: devuelve el frame en que la ventana esta insertada
+                         Length: devuelve el numero de frames en va ventava
+
+                         PROPIEDADES CON LAS VENTANES   
+
+                         closed: devuelve un boolean si la ventana esta cerrada
+                         opener: devuelve una referecia con la ventane que creo la ventana actual
+                         parent: devuelvela ventana padre de la ventana actual
+                         self: devuelve la ventana actual
+
+                         OTROS OBJETOS DEL NAVEGADOR
+
+                                window.document
+                                window.navigator
+                                window.screen
+                                window.history
+                                window.location
+                                No es obligatorio poner el window
+
+                                //METODOS MAS IMPORTANTES */
+                          
+                          var miVentana;// crear fuera de las funciones para poder acceder en cualquier momento
+
+                          //para abrirla opern (url, nombre, especificaciones)
+
+                          function crearVentana(){
+                              //miVentana=window.open("https://www.jefneve.com");
+                              miVentana=window.open("","","width=500,height=500");//sin url y sin nombre
+                              miVentana.document.write("<h1>Mi ventana</h1>");
+                          }
+
+                          //destruir o eliminar ua ventana
+
+                          //close() sierra una ventana en concreto
+
+                          function cerrar(){
+                              miVentana.close();
+                          }
+
+                          //resizeBy(pix, pix) respecto a su tamano actual
+
+                          function redimencionar(){
+                              miVentana.resizeBy(10,10);
+                          }
+
+                          //resizeTo la pone a el numero de pixel especificado
+
+
+                          //moveby(pix,pix): mueve la ventana un numero de pixeles respecto a su posicion actual
+
+                          function mover(){
+                              miVentana.moveBy(10,10);
+                          }
+
+                          //moveTo mueve a una posicion concreta
+
+                          //scrollBy(pix,pix) mueve las barras de scroll un numero de pixeles desde la posicion actual
+
+                          //scrollTo(pix,pix) mueve el scroll a una posciion determinada
+
+                          //focus(): pone el foco en la ventana indicada
+
+                          function enfoque(){
+                              miVentana.focus();
+                          }
+
+                          //print()imprime la ventana indicada
+
+                          function imprimir(){
+                             //print();
+                              miVentana.print();
+                          }
+
+                          //stop(): detiene la carga de la pagina
+
+                          
+
+                    
+
+        </script>
+
+        <button onClick="crearVentana()">crear ventana</button>
+        <button onClick="cerrar()">Cerar ventana</button>
+        <button onClick="redimencionar()">Redimencionar</button>
+         <button onClick="mover()">Mover</button>
+         <button onClick="enfoque()">Enfocar</button>
+         <button onClick="imprimir()">Imprimir</button>
+
+    </body>
+</html>
