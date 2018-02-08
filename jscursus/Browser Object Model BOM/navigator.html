@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>Navigator Object</div>
+        <p id="navegador"></p>
+
+        <script>
+        //Propiedades del navegador
+        texto="";
+        //appCodeName
+            texto+= "<br>CodeName: "+navigator.appCodeName;
+        //appName
+            texto+= "<br>Name: "+navigator.appName;
+
+        //appversion
+            texto+="<br>Version: "+navigator.appVersion
+        
+        //product
+            texto+="<br>motor: "+navigator.product;
+
+        //platform
+            texto+="<br>Plataforma: "+navigator.platform;
+            
+
+        //onLine
+            texto+="<br>OnLine: "+navigator.onLine;
+
+        //language
+            texto+="<br>Idioma: "+navigator.language;
+
+        //cookieEnabled
+            texto+="<br>Cookies: "+navigator.cookieEnabled;
+
+        //userAgent
+            texto+="<br>UserAgent: "+navigator.userAgent;
+
+            document.getElementById("navegador").innerHTML =texto;
+        </script>
+    </body>
+</html>

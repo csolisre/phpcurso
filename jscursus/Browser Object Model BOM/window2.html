@@ -12,11 +12,12 @@ and open the template in the editor.
     </head>
     <body>
         <div>Window II Cuadros de dialogo</div>
+        <p id="reloj"></p>
         <script>
             //alert(mensaje) no devuelve valor
 
             //prompt(recibe mensaje + "un texto por defecto") lo que introduca el usuario se almasena en una variable
-
+                    /*
             var respuesta = prompt("cual es tu nombre?", "introduce un nombre");
             alert("hola "+ respuesta);
 
@@ -27,10 +28,35 @@ and open the template in the editor.
                 alert("me alegra")
             }else{
                 alert("pues es una pena");
-            }
+            } 
+            */
+            
+            //EVENTOS DE TIEMPO
+            
+                //setTimeout, clearTimeout, setInterval
+                
+                //setTimeout(function, milisegundos) se indican cuandos milisegundos 
+                //tiene  que pasar antes de que la funcion indicada en el primer parametro se ejecute
+                
+                function saludar(){
+                    alert("hola");
+                }
 
+                //clearTimeout(variable timeout)
+                    
+                //setInterval(function,milisesundos)
 
+                var int =setInterval(reloj,1000);
+
+                function reloj(){
+                    var fecha = new Date(); //devuelve la fecha actual
+                    document.getElementById("reloj").innerHTML = fecha.getSeconds();
+                }
 
         </script>
+        <button onclick="setTimeout(saludar,3000)">saluda</button>
+        <button onclick="sal = setTimeout(saludar,3000)">saluda</button>
+        <button onclick="clearTimeout(sal)">clear</button>
+        <button onclick="clearTimeout(int)">parar reloj</button>
     </body>
 </html>

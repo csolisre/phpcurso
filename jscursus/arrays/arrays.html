@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>Arrays</div>
+        <script>
+            //Estructura de datos estatica el objeto se referencia con un nombre el array con un indice numerico
+            //Puede almacenar varios tipos de datos
+
+            var personas =["perro", "gato", "pez"];
+
+            var personas2 = new Array ("peero", "gato", "pez");
+
+
+            //accediendo a las arrays
+
+            var miAnimal= personas[0];
+
+            //todas los elementos del array 
+                alert(personas);
+                document.write(personas);
+
+            //Propiedades 
+            //length
+            document.write("<br>la longitud del array es " + personas.length); 
+
+            //Mostrar uno a uno
+            for(i=0; i < personas.length; i++){
+                document.write("<br>"+ personas[i]);
+            }           
+
+
+            //Metodos!!!
+
+            //Array.isArray(nombre);
+
+            document.write("<br>Personas es un array ?"+ Array.isArray(personas));
+
+            //Metodos para mostrar el array
+
+            //toString() el mas recomendado!!!!!
+
+            document.write("<br> el array en tipo string es " +personas.toString());
+
+            //Join Lo mismo pero un un separador 
+
+             document.write("<br> el array en tipo join es " +personas.join("*"));
+
+             //Anadir elementos a un array "push"
+
+             //pop()extrae el primer shift() extrae el ultimo
+
+             //var ultimo = personas.pop();
+               document.write("<br> el ultimo elemento es "+ personas.pop());
+
+               //Delete elimina un elemento del array pero el hueco queda en el array como undefined
+
+               //delete personas[index]
+
+               //PUSH
+
+               //push(elemento) nade un elemento al final y unshift(elemento) anade e elemento al final de array
+
+               personas.push("cocodrilo");
+               document.write("<br>despues de anadir un nuevo elemento azl array " +personas.toString());
+
+               //splice(posicion a insertar o borrar, elementos a borrar, elementos a nadir separados por comas);
+
+              personas.splice (2,1,"vaca", "toro");//inserta dos elementos a partir de la posicion 2 y borra un elemento 
+
+              document.write("despues de splice anadir dos y borrar uno quedan <br>"+personas.toString());
+
+              //personas.splice(0,1) borraria un elemento iniciando del index 0
+
+              //slice(inicial,final)
+
+              var subarray =animales
+        </script>
+            
+    </body>
+</html>

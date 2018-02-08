@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>Screen Object</div>
+        <p id="pantalla"><p>
+        <script>
+            //Caracteristicas
+            //Obtiene la infomacion de la ventana del visitante
+            //No hay un standar pero la mayoria de los navegadores soportan "screen" pantalla del usuario no de la ventana
+
+            //Propiedades
+
+            var texto="";
+
+            //tamano de la pantalla
+
+            texto+="<br>Ancho"+screen.width;
+            texto+="<br>Alto"+screen.height;
+
+            //tamano d ela pantalla sin la barra de tareas
+
+            texto+= "<br>Ancho: "+screen.availWidth;
+            texto+="<br>Alto"+screen.availHeight;
+
+            //Profundidad de color
+            texto+="<br>profundidad "+screen.colorDepth;
+ 
+            //resolucion en bits por pixel
+            texto+="<br>Resolucion"+screen.pixelDepth;
+
+            document.getElementById("pantalla").innerHTML = texto;
+        </script>
+    </body>
+</html>

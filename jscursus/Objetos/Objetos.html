@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>Objetos</div>
+        <p id="persona"></p>
+        <script>
+        
+/*
+            var persona1 ={nombre:"carlos", apellido:"solis", ano:1978};
+
+           // alert(persona1.nombre);
+
+         
+            //anadir propiedad
+
+            persona1.nacionalidad="mexicana";
+              
+              
+
+                //quitar propiedad
+
+                delete persona1.ano;
+
+                //for loop
+
+                 for (x in persona1){
+                 alert(persona1[x]);
+                      }
+
+*/
+
+    //metodos de un objeto
+
+ /* var persona1 ={nombre:"carlos", 
+  apellido:"solis", 
+  nombreCompleto: function(){
+    return this.nombre + " " + this.apellido +"es su nombre"; 
+    },
+  ano:1978
+  };
+
+alert(persona1.nombreCompleto());*/
+
+//Utilizando el constructor!!!!!!!!!!!!!!!!!!
+
+//Creamos el constructor
+
+function Persona(nombre,edad,nacionalidad){
+    this.nombre= nombre;
+    this.edad =edad;
+    this.nac =nacionalidad;
+
+    this.nombreCompleto = function(){
+        return this.nombre + " " + this.edad + " " +this.nac; 
+    }
+}
+
+//Creamos dos objetos de esta clase
+var carlos = new Persona(carlos,39,"mexicana");
+var annelies = new Persona(annelies,39,"belga");
+
+//anadir propiedad
+
+carlos.sexo = "masculino";//solo se anade a a este objeto "carlos"
+
+alert(carlos.sexo);
+
+//anadir una propiedad a todos los objetos de la clase
+
+Persona.prototype.muerte =2000;
+
+alert(carlos.muerte);
+//anadir un metodo a toda la clase ""protoype""
+
+Persona.prototype.defuntion = function(){
+    return "Semurio en el ano "+ this.muerte;
+}
+alert(carlos.defuntion());
+
+
+var eline = new Persona("eline",9,"ambas");
+
+alert(eline.nombre + eline.defuntion());
+        </script>
+    </body>
+</html>
