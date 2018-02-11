@@ -19,8 +19,9 @@ require_once("moduleList.php");
             <?php
             foreach ($tab as $module) {
                 $moduleNaam = $module->getNaam();
+                $moduleDescription = $module->getDescription();
                 $moduleId = $module->getId();
-                print("<li>" . $moduleNaam . "
+                print("<li>" . $moduleNaam . $moduleDescription . "
 (<a href=\"dbGegevensBewerken.php?id="
                         . $moduleId . "\">Bewerken</a>) </li>");
             }
