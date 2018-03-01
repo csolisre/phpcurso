@@ -19,23 +19,23 @@ class Chat{
     }
     
     public function getList() {
-        $sql= "select id, nickname, boodschap from chatberichten order by datum desc limit 20";
+        $sql= "select id, nickname, boodschap, image from chatberichten order by datum desc limit 20";
         $dbh= new PDO($this->dbconect, $this->dbuser, $this->dbpwd);
         $resultSet = $dbh->query($sql);
         $list= array();
         foreach ($resultSet as $rij) {
-            $bericht= new Bericht($rij["id"], $rij["nickname"], $rij["boodschap"]);
+            $bericht= new Bericht($rij["id"], $rij["nickname"], $rij["boodschap"],$rij["image"] );
             array_push($list, $bericht);
         }
         $dbh=null;
         return $list;
     }
-    public function createBericht($nickName, $boodschap) {
-        $sql= "insert into chatberichten (nickname, boodschap, datum) values (:nickname, :boodschap, :datum)";
+    public function createBericht($nickName, $boodschap, $image) {
+        $sql= "insert into chatberichten (nickname, boodschap, datum, image) values (:nickname, :boodschap, :datum, :image)";
         $dbh = new PDO($this->dbconect, $this->dbuser, $this->dbpwd);
         $stmt = $dbh->prepare($sql);
         $datum = date("Y-m-d H:i:s");
-        $stmt->execute(array(':nickname' => $nickName, ':boodschap' => $boodschap, ':datum' => $datum));
+        $stmt->execute(array(':nickname' => $nickName, ':boodschap' => $boodschap, ':datum' => $datum, ':image' => $image));
         $dbh=null;
     }
 }

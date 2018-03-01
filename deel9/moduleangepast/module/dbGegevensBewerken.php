@@ -40,7 +40,7 @@ if (isset($_GET["action"]) && $_GET["action"] == "verwerk") {
                           <?php print($module->getPrijs()); ?>" /> euro<br />
 
             <textarea class="ckeditor" name="description" id="editor1"> <?php print($module->getDescription()); ?></textarea>
-            Image: <input type="file" name="image">
+<!--            Image: <input type="file" name="image">-->
 
 
             <input type="submit" value="Opslaanxx" />
@@ -55,7 +55,8 @@ if (isset($_GET["action"]) && $_GET["action"] == "verwerk") {
                         filebrowserBrowseUrl: 'http://localhost:8888/phpcurso/deel9/ckeditor/ckfinder/ckfinder.html',
                         filebrowserUploadUrl: 'http://localhost:8888/phpcurso/deel9/ckeditor/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files',
                         filebrowserWindowWidth: '1000',
-                        filebrowserWindowHeight: '700'
+                        filebrowserWindowHeight: '700',
+                       // extraPlugins: 'simplebox'
                     } );
 
 

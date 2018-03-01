@@ -23,7 +23,7 @@ and open the template in the editor.
 
             //accediendo a las arrays
 
-            var miAnimal= personas[0];
+            var miPersona= personas[0];
 
             //todas los elementos del array 
                 alert(personas);
@@ -71,19 +71,55 @@ and open the template in the editor.
                //push(elemento) nade un elemento al final y unshift(elemento) anade e elemento al final de array
 
                personas.push("cocodrilo");
-               document.write("<br>despues de anadir un nuevo elemento azl array " +personas.toString());
+               document.write("<br>despues de anadir un nuevo elemento al array " +personas.toString());
 
                //splice(posicion a insertar o borrar, elementos a borrar, elementos a nadir separados por comas);
 
               personas.splice (2,1,"vaca", "toro");//inserta dos elementos a partir de la posicion 2 y borra un elemento 
 
-              document.write("despues de splice anadir dos y borrar uno quedan <br>"+personas.toString());
+              document.write("<br>despues de splice anadir dos y borrar uno quedan <br>"+personas.toString());
 
               //personas.splice(0,1) borraria un elemento iniciando del index 0
 
               //slice(inicial,final)
 
-              var subarray =animales
+              var subPersonas= personas.splice(1,3) //devueleve un array desde pa posiion 1 a la 3 // pero las extrajo del array
+
+              document.write("<br>el valor del sub array es: "+ subPersonas);
+              for (i=0; i < personas.length; i++){
+                  document.write("<br>"+personas[i] + ", ");
+              }
+
+              document.write(personas.length);
+
+              //Concat(lista de arrays) une el array inicial con un segundo animal
+                var masAnimales =["burro","mula"];
+                
+                personas = personas.concat(masAnimales);
+              document.write("<br> el array completo es "+ personas.toString());
+
+              //copyWithin() copya elementos del array y los sustitylle por otros elementos
+
+               //fill()sustituye todos los elementos del array por el elemento indicado
+
+               //METODOS DE BUSQUEDA
+
+               // indexOf(elemento,[posicion"opcional])
+               //lastIndexOf() regresa el elemento de la ultima posicion
+
+               document.write("<br>la primera posicion de toro es "+personas.indexOf("toro"));
+
+               //METODOS PARA ORDENAR   
+               //reverse()invierte el orden de un array
+
+               personas.reverse();
+               document.write("<br> despues de reverse es "+ personas.toString());
+
+               //sort()ordena el array: las cadenas se ordenan alfabeticamente
+               //para ordenar por numero deben estar como numeros no como cadenas ya que por cadena compara caracter por caracter
+               personas.sort();
+               document.write("<br> despues de ordenar es "+ personas.toString());
+             
         </script>
             
     </body>

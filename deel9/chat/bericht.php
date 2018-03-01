@@ -10,12 +10,16 @@ class Bericht{
     private $id;
     private $nickName;
     private $boodschap;
-    
-    
-    public function __construct($id, $nickName, $boodschap) {
+    private $image;
+
+
+
+
+    public function __construct($id, $nickName, $boodschap, $image) {
         $this->id=$id;
         $this->nickName=$nickName;
         $this->boodschap=$boodschap;
+        $this->image=$image;
     }
     
     public function getNickName() {
@@ -24,6 +28,9 @@ class Bericht{
     
     public function getBoodschap() {
         return $this->boodschap;
+    }
+    public function getImage() {
+        return $this->image;
     }
     
 }
